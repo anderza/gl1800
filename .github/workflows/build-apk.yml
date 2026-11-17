@@ -18,6 +18,7 @@ jobs:
   # ШАГ 1. Превью: веб-версия приложения на GitHub Pages
   preview:
     runs-on: ubuntu-latest
+    continue-on-error: true   # если Pages не включены, сборка APK всё равно пойдёт
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -33,6 +34,7 @@ jobs:
   # ШАГ 2. Сборка APK (запускается только после превью)
   build:
     needs: preview
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
