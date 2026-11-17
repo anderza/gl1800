@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GL1800 — Справочник по ТО</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1c2430; --muted:#5b6675;
+    --line:#e3e7ee; --accent:#c8102e; --accent-ink:#ffffff; --chip:#eef1f6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#12161c; --card:#1b2129; --ink:#e8edf3; --muted:#9aa6b5;
+      --line:#2a323d; --accent:#ff5a6e; --accent-ink:#1a0d10; --chip:#232b35; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-text-size-adjust:100%;padding-bottom:40px}
+  header{position:sticky;top:0;z-index:10;background:var(--card);
+    border-bottom:1px solid var(--line);padding:12px 16px}
+  .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .back{display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+    color:var(--accent);font-weight:600;padding:8px 12px;border:1px solid var(--line);
+    border-radius:10px;background:var(--chip)}
+  h1{font-size:20px;margin:0}
+  .sub{color:var(--muted);font-size:13px;margin-top:2px}
+  nav{display:flex;gap:8px;overflow-x:auto;padding:10px 16px 4px;
+    -webkit-overflow-scrolling:touch}
+  nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);background:var(--chip);
+    border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-size:14px}
+  main{max-width:820px;margin:0 auto;padding:16px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:16px;margin:16px 0}
+  h2{font-size:18px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+  .note{background:var(--chip);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:10px;padding:12px 14px;color:var(--muted);font-size:14px;margin:12px 0}
+  .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:15px;min-width:480px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.03em}
+  tr:last-child td{border-bottom:none}
+  td b{color:var(--ink)}
+  ul{margin:8px 0 0;padding-left:20px}
+  li{margin:6px 0}
+  .pill{display:inline-block;background:var(--chip);border:1px solid var(--line);
+    border-radius:8px;padding:2px 8px;font-size:13px;color:var(--muted)}
+  footer{max-width:820px;margin:0 auto;padding:0 16px;color:var(--muted);font-size:13px}
+  @media print{ header,nav{position:static} body{background:#fff;color:#000} }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <a class="back" href="index.html">← К руководству</a>
+    <div>
+      <h1>GL1800 — Справочник по ТО</h1>
+      <div class="sub">Honda Gold Wing 1800 · 2001–2017 · неофициальный справочник</div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#schedule">Регламент</a>
+  <a href="#fluids">Жидкости</a>
+  <a href="#tires">Шины</a>
+  <a href="#electrics">Свечи и АКБ</a>
+  <a href="#torque">Моменты</a>
+  <a href="#checks">Проверки</a>
+</nav>
+
+<main>
+  <div class="note">
+    ⚠️ Это краткий справочник, составленный по общедоступным данным, а не перевод руководства Honda.
+    Значения с «≈» — ориентировочные. Перед ответственными работами (тормоза, оси, рулевая, подвеска)
+    сверяйтесь с оригинальным <b>manual.pdf</b> в приложении.
+  </div>
+
+  <section id="schedule">
+    <h2>🗓️ Регламент ТО</h2>
+    <div class="tbl"><table>
+      <tr><th>Операция</th><th>Интервал</th><th>Примечание</th></tr>
+      <tr><td><b>Масло + фильтр</b></td><td>12 000 км или 1 год</td><td>что раньше; многие меняют чаще (6–8 тыс. км)</td></tr>
+      <tr><td><b>Воздушный фильтр</b></td><td>осмотр 12 000 км, замена ≈24 000 км</td><td>в пыли — чаще</td></tr>
+      <tr><td><b>Свечи (6 шт.)</b></td><td>≈24 000 км</td><td>зазор 1,0–1,1 мм</td></tr>
+      <tr><td><b>Тормозная жидкость</b></td><td>каждые 2 года</td><td>DOT 4</td></tr>
+      <tr><td><b>Антифриз</b></td><td>каждые 2 года</td><td>для алюминиевых двигателей</td></tr>
+      <tr><td><b>Масло редуктора</b></td><td>24 000 км или 2 года</td><td>удобно совмещать с заменой задней шины</td></tr>
+      <tr><td><b>Шлицы кардана</b></td><td>при каждом снятии заднего колеса</td><td>очистить + молибденовая паста</td></tr>
+      <tr><td><b>Клапаны</b></td><td>регулировка не требуется</td><td>гидрокомпенсаторы</td></tr>
+      <tr><td><b>Давление в шинах</b></td><td>перед каждым выездом</td><td>см. раздел «Шины»</td></tr>
+    </table></div>
+    <div class="note">Точные заводские интервалы — в оригинальном руководстве. Здесь — практичный ориентир.</div>
+  </section>
+
+  <section id="fluids">
+    <h2>🛢️ Жидкости и объёмы</h2>
+    <div class="tbl"><table>
+      <tr><th>Система</th><th>Объём</th><th>Спецификация</th></tr>
+      <tr><td><b>Моторное масло</b></td><td>≈3,6 л (с фильтром)</td><td>10W-40, API SG+, <b>JASO MA/MA2</b> (мокрое сцепление)</td></tr>
+      <tr><td><b>Антифриз</b></td><td>≈3,5–3,7 л</td><td>этиленгликоль, без силикатов, 50/50</td></tr>
+      <tr><td><b>Редуктор (кардан)</b></td><td>≈150 мл</td><td>гипоидное GL-5, 80W-90 (или 75W-90)</td></tr>
+      <tr><td><b>Тормозная жидкость</b></td><td>по уровню</td><td>DOT 4</td></tr>
+      <tr><td><b>Топливо</b></td><td>бак ≈25 л</td><td>не ниже АИ-92, лучше АИ-95</td></tr>
+    </table></div>
+    <div class="note">Масло общее для двигателя, сцепления и коробки — только мотоциклетное JASO MA/MA2,
+    не автомобильное «energy conserving». Уровень масла проверяйте по щупу.</div>
+  </section>
+
+  <section id="tires">
+    <h2>🛞 Шины и давление</h2>
+    <div class="tbl"><table>
+      <tr><th>Колесо</th><th>Размер</th><th>Давление (соло)</th><th>С пассажиром/грузом</th></tr>
+      <tr><td><b>Переднее</b></td><td>130/70 R18</td><td>≈2,5 бар (36 psi)</td><td>≈2,5 бар</td></tr>
+      <tr><td><b>Заднее</b></td><td>180/60 R16</td><td>≈2,5 бар (36 psi)</td><td>до ≈2,8 бар (41 psi)</td></tr>
+    </table></div>
+    <div class="note">Сверяйтесь с наклейкой на мотоцикле и оригинальным руководством. Давление проверяйте на холодных шинах.</div>
+  </section>
+
+  <section id="electrics">
+    <h2>🔌 Свечи и аккумулятор</h2>
+    <div class="tbl"><table>
+      <tr><th>Параметр</th><th>Значение</th></tr>
+      <tr><td><b>Свечи</b></td><td>NGK BKR6E-11 (или Denso K20PR-U11), 6 шт.</td></tr>
+      <tr><td><b>Зазор</b></td><td>1,0–1,1 мм</td></tr>
+      <tr><td><b>Установка свечи</b></td><td>от руки до посадки, затем новая шайба: ½–⅔ оборота ключом</td></tr>
+      <tr><td><b>Аккумулятор</b></td><td>YTX20L-BS, 12 В, 18 А·ч (сверьте с установленным)</td></tr>
+    </table></div>
+  </section>
+
+  <section id="torque">
+    <h2>🔧 Моменты затяжки (ориентир)</h2>
+    <div class="tbl"><table>
+      <tr><th>Крепёж</th><th>Момент</th></tr>
+      <tr><td><b>Сливная пробка масла</b></td><td>≈30 Н·м</td></tr>
+      <tr><td><b>Пробки редуктора (слив/налив)</b></td><td>≈12 Н·м</td></tr>
+      <tr><td><b>Масляный фильтр</b></td><td>от руки до касания + ¾ оборота</td></tr>
+    </table></div>
+    <div class="note">🛑 Оси колёс, суппорты, рулевая и подвеска — <b>только по оригинальному руководству</b>.
+    Это критично для безопасности, не берите значения «на глаз».</div>
+  </section>
+
+  <section id="checks">
+    <h2>✅ Регулярные проверки</h2>
+    <ul>
+      <li>Рулевая колонка: люфт и «ступенька» в среднем положении — частая точка износа.</li>
+      <li>Пыльники и состояние кардана/редуктора, течи масла.</li>
+      <li>Радиаторы и вентилятор: чистота, отсутствие подтёков антифриза.</li>
+      <li>Тормозные диски и колодки: толщина, биение, равномерность износа.</li>
+      <li>Компрессор пневмоподвески (если установлен): работа и удержание давления.</li>
+      <li>Клеммы АКБ: чистота и затяжка; уровень заряда при простое.</li>
+      <li>Свет, стоп-сигнал, поворотники, звуковой сигнал.</li>
+    </ul>
+    <div class="note">Прокачка связанной тормозной системы (LBS) имеет строгую последовательность —
+    выполняйте её по оригинальному руководству, раздел «Тормоза».</div>
+  </section>
+</main>
+
+<footer>
+  Неофициальный справочник · данные ориентировочные · оригинал: manual.pdf ·
+  <a href="index.html" style="color:var(--accent)">← вернуться к руководству</a>
+</footer>
+</body>
+</html>
