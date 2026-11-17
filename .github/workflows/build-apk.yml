@@ -4,57 +4,68 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: # Позволяет запустить сборку вручную кнопкой
+  workflow_dispatch: # Ручной запуск кнопкой Run workflow
 
 jobs:
-  # Задача 1: Подготовка файлов для превью (Pages)
-  # continue-on-error: true гарантирует, что даже при ошибке здесь, APK всё равно соберётся
+  # ---------- Задача 1: превью (веб-версия) ----------
   preview:
     name: Build Preview
-    runs-on: ubuntu-latest
-    continue-on-error: true
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build web assets
-        run: npm run build
-
-      - name: Upload preview artifact
+      - name: Upload web version
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'www' # Укажите 'dist', если ваш проект собирается в папку dist
+          path: 'www'
 
-  # Задача 2: Сборка Android APK (запускается независимо от результата preview)
+      - name: Deploy to GitHub Pages
+        continue-on-error: true # Если Pages не включён — не страшно, APK соберётся отдельно
+        uses: actions/deploy-pages@v4
+
+  # ---------- Задача 2: сборка Android APK (не зависит от превью) ----------
   build:
     name: Build Android APK
-    runs-on: ubuntu-latest
-    # Мы НЕ добавляем "needs: preview", поэтому эта задача начнётся сразу и не зависит от превью
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write # Нужно, чтобы выложить файл в Releases
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install # npm ci требовал package-lock.json, которого нет в репозитории
 
-      - name: Build web assets
-        run: npm run build
+      - name: Check signing secrets
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          missing=0
+          if [ -z "$KEYSTORE_BASE64" ]; then echo "::error::Не задан секрет KEYSTORE_BASE64"; missing=1; fi
+          if [ -z "$KEYSTORE_PASSWORD" ]; then echo "::error::Не задан секрет KEYSTORE_PASSWORD"; missing=1; fi
+          if [ -z "$KEY_ALIAS" ]; then echo "::error::Не задан секрет KEY_ALIAS"; missing=1; fi
+          if [ -z "$KEY_PASSWORD" ]; then echo "::error::Не задан секрет KEY_PASSWORD"; missing=1; fi
+          exit $missing
 
-      - name: Sync Capacitor
-        run: npx cap sync android
+      - name: Create Android project
+        run: |
+          if [ ! -d "android" ]; then
+            npx cap add android
+          fi
+          npx cap sync android
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -62,25 +73,46 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Decode Keystore
-        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/release-key.keystore
+      - name: Decode and check keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        run: |
+          echo "$KEYSTORE_BASE64" | base64 -di > release-key.keystore
+          keytool -list -keystore release-key.keystore -storepass "$KEYSTORE_PASSWORD" > /dev/null || {
+            echo "::error::Не удалось открыть ключ. Проверьте секреты KEYSTORE_BASE64 и KEYSTORE_PASSWORD."
+            exit 1
+          }
 
-      - name: Build APK
-        run: cd android && ./gradlew assembleRelease
+      - name: Build APK and AAB
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleRelease bundleRelease --no-daemon
+
+      - name: Sign files
         env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-
-      - name: Rename APK
-        run: mv android/app/build/outputs/apk/release/app-release.apk GL1800-manual.apk
+        run: |
+          BT="$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -n 1)"
+          APK=$(find android/app/build/outputs/apk/release -name "*.apk" | head -n 1)
+          "$BT/zipalign" -f -p 4 "$APK" aligned.apk
+          "$BT/apksigner" sign --ks release-key.keystore --ks-pass env:KEYSTORE_PASSWORD --ks-key-alias "$KEY_ALIAS" --key-pass env:KEY_PASSWORD --out GL1800-manual.apk aligned.apk
+          "$BT/apksigner" verify GL1800-manual.apk
+          AAB=$(find android/app/build/outputs/bundle/release -name "*.aab" | head -n 1)
+          cp "$AAB" GL1800-manual.aab
+          jarsigner -keystore release-key.keystore -storepass:env KEYSTORE_PASSWORD -keypass:env KEY_PASSWORD GL1800-manual.aab "$KEY_ALIAS"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0.${{ github.run_number }}
           name: Сборка №${{ github.run_number }}
-          files: GL1800-manual.apk
+          files: |
+            GL1800-manual.apk
+            GL1800-manual.aab
           draft: false
           prerelease: false
         env:
