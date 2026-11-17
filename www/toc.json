@@ -1,0 +1,4848 @@
+[
+ {
+  "num": 0,
+  "title": "КАК ИСПОЛЬЗОВАТЬ ЭТО РУКОВОДСТВО",
+  "startPage": 2,
+  "items": [],
+  "titleEn": "HOW TO USE THIS MANUAL"
+ },
+ {
+  "num": 0,
+  "title": "СИМВОЛИ",
+  "startPage": 3,
+  "items": [],
+  "titleEn": "SYMBOLS"
+ },
+ {
+  "num": 1,
+  "title": "ОБЩАЯ ИНФОРМАЦИЯ",
+  "startPage": 4,
+  "items": [
+   {
+    "title": "ПРАВИЛА ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ",
+    "pageLabel": "1-2",
+    "group": null,
+    "pdfPage": 5,
+    "titleEn": "SERVICE RULES"
+   },
+   {
+    "title": "ОПРЕДЕЛЕНИЕ МОДЕЛИ",
+    "pageLabel": "1-2",
+    "group": null,
+    "pdfPage": 5,
+    "titleEn": "MODEL IDENTIFICATION"
+   },
+   {
+    "title": "ОСНОВНЫЕ СПЕЦИФИКАЦИИ",
+    "pageLabel": "1-4",
+    "group": null,
+    "pdfPage": 7,
+    "titleEn": "GENERAL SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ СМАЗКИ",
+    "pageLabel": "1-6",
+    "group": null,
+    "pdfPage": 9,
+    "titleEn": "LUBRICATION SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ ПИТАНИЯ (Программируемый впрыск)",
+    "pageLabel": "1-6",
+    "group": null,
+    "pdfPage": 9,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection) SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ ОХЛАЖДЕНИЯ",
+    "pageLabel": "1-6",
+    "group": null,
+    "pdfPage": 9,
+    "titleEn": "COOLING SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ГОЛОВКИ ЦИЛИНДРА / ВАЛЬВОВ",
+    "pageLabel": "1-7",
+    "group": null,
+    "pdfPage": 10,
+    "titleEn": "CYLINDER HEAD/VALVE SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СЦЕПЛЕНИЯ",
+    "pageLabel": "1-7",
+    "group": null,
+    "pdfPage": 10,
+    "titleEn": "CLUTCH SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ПЕРЕКЛЮЧАТЕЛЯ ПЕРЕДАЧ / ТРАНСМИССИИ",
+    "pageLabel": "1-8",
+    "group": null,
+    "pdfPage": 11,
+    "titleEn": "GEARSHIFT LINKAGE/TRANSMISSION SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ЦИЛИНДРА / ПИСТОНА / ВАЛА ВРАТ",
+    "pageLabel": "1-8",
+    "group": null,
+    "pdfPage": 11,
+    "titleEn": "CYLINDER/PISTON/CRANKSHAFT SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "1-9",
+    "group": null,
+    "pdfPage": 12,
+    "titleEn": "FINAL DRIVE SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ПЕРЕДНЕГО КОЛЕСА / ПОДВЕСКИ / УПРАВЛЕНИЯ",
+    "pageLabel": "1-9",
+    "group": null,
+    "pdfPage": 12,
+    "titleEn": "FRONT WHEEL/SUSPENSION/STEERING SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ЗАДНИХ КОЛЕС / ПОДВЕСКИ",
+    "pageLabel": "1-9",
+    "group": null,
+    "pdfPage": 12,
+    "titleEn": "REAR WHEEL/SUSPENSION SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ТОРМОЗНОЙ СИСТЕМЫ",
+    "pageLabel": "1-10",
+    "group": null,
+    "pdfPage": 13,
+    "titleEn": "BRAKE SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ АКБ / СИСТЕМЫ ЗАРЯДКИ",
+    "pageLabel": "1-10",
+    "group": null,
+    "pdfPage": 13,
+    "titleEn": "BATTERY/CHARGING SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ ЗАЖИГАНИЯ",
+    "pageLabel": "1-11",
+    "group": null,
+    "pdfPage": 14,
+    "titleEn": "IGNITION SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "1-11",
+    "group": null,
+    "pdfPage": 14,
+    "titleEn": "STARTER/REVERSE SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ОСВЕТИТЕЛЕЙ / ПРИБОРОВ / ПЕРЕКЛЮЧАТЕЛЕЙ",
+    "pageLabel": "1-11",
+    "group": null,
+    "pdfPage": 14,
+    "titleEn": "LIGHTS/METERS/SWITCHES SPECIFICATIONS"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ АВТОПИЛОТА",
+    "pageLabel": "1-11",
+    "group": null,
+    "pdfPage": 14,
+    "titleEn": "CRUISE CONTROL SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "СТАНДАРТНЫЕ ВЕЛИЧИНЫ КРУПЛЕННЫХ МОМЕНТОВ",
+    "pageLabel": "1-12",
+    "group": null,
+    "pdfPage": 15,
+    "titleEn": "STANDARD TORQUE VALUES"
+   },
+   {
+    "title": "КРУПЛЕННЫЕ МОМЕНТЫ ДВИГАТЕЛЯ И РАМЫ",
+    "pageLabel": "1-12",
+    "group": null,
+    "pdfPage": 15,
+    "titleEn": "ENGINE & FRAME TORQUE VALUES"
+   },
+   {
+    "title": "ТОЧКИ СМАЗКИ И ЗАПЕЧАТЛЕНИЯ",
+    "pageLabel": "1-19",
+    "group": null,
+    "pdfPage": 22,
+    "titleEn": "LUBRICATION & SEAL POINTS"
+   },
+   {
+    "title": "ПРОКЛАДКА ЖГУТОВ И СЕТЕЙ",
+    "pageLabel": "1-23",
+    "group": null,
+    "pdfPage": 26,
+    "titleEn": "CABLE & HARNESS ROUTING"
+   },
+   {
+    "title": "СИСТЕМЫ КОНТРОЛЯ ВЫБРОСОВ",
+    "pageLabel": "1-69",
+    "group": null,
+    "pdfPage": 72,
+    "titleEn": "EMISSION CONTROL SYSTEMS"
+   },
+   {
+    "title": "ШИРЫДКИ ИНФОРМАЦИИ О КОНТРОЛЕ ВЫБРОСОВ",
+    "pageLabel": "1-72",
+    "group": null,
+    "pdfPage": 75,
+    "titleEn": "EMISSION CONTROL INFORMATION LABELS"
+   }
+  ],
+  "titleEn": "GENERAL INFORMATION"
+ },
+ {
+  "num": 2,
+  "title": "РАМА / КОРПУСНЫЕ ПАНЕЛИ / ВЫХЛОПНАЯ СИСТЕМА",
+  "startPage": 76,
+  "items": [
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "2-2",
+    "group": null,
+    "pdfPage": 77,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "2-2",
+    "group": null,
+    "pdfPage": 77,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "РАСПОЛОЖЕНИЕ КОРПУСНЫХ ПАНЕЛЕЙ",
+    "pageLabel": "2-3",
+    "group": null,
+    "pdfPage": 78,
+    "titleEn": "BODY PANEL LOCATIONS"
+   },
+   {
+    "title": "БОКОВАЯ КРЫШКА",
+    "pageLabel": "2-5",
+    "group": null,
+    "pdfPage": 80,
+    "titleEn": "SIDE COVER"
+   },
+   {
+    "title": "БОКОВАЯ КРЫШКА ДВИГАТЕЛЯ",
+    "pageLabel": "2-5",
+    "group": null,
+    "pdfPage": 80,
+    "titleEn": "ENGINE SIDE COVER"
+   },
+   {
+    "title": "СЕДЛО",
+    "pageLabel": "2-5",
+    "group": null,
+    "pdfPage": 80,
+    "titleEn": "SEAT"
+   },
+   {
+    "title": "КРЫШКИ ПЕРЕДНЕГО КРЫЛА",
+    "pageLabel": "2-6",
+    "group": null,
+    "pdfPage": 81,
+    "titleEn": "FRONT FENDER COVERS"
+   },
+   {
+    "title": "НИЖНИЙ ПЕРЕДНИЙ ЭКРАН",
+    "pageLabel": "2-6",
+    "group": null,
+    "pdfPage": 81,
+    "titleEn": "FRONT LOWER FAIRING"
+   },
+   {
+    "title": "ПАНЕЛЬ ПРИБОРОВ",
+    "pageLabel": "2-7",
+    "group": null,
+    "pdfPage": 82,
+    "titleEn": "METER PANEL"
+   },
+   {
+    "title": "ЗЕРКАЛО ЗАДНЕГО ВИДА",
+    "pageLabel": "2-7",
+    "group": null,
+    "pdfPage": 82,
+    "titleEn": "REARVIEW MIRROR"
+   },
+   {
+    "title": "ВЕТРОВОЙ ЭКРАН",
+    "pageLabel": "2-8",
+    "group": null,
+    "pdfPage": 83,
+    "titleEn": "WINDSHIELD"
+   },
+   {
+    "title": "ВНУТРЕННИЙ ЭКРАН",
+    "pageLabel": "2-10",
+    "group": null,
+    "pdfPage": 85,
+    "titleEn": "INNER FAIRING"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ЭКРАН",
+    "pageLabel": "2-10",
+    "group": null,
+    "pdfPage": 85,
+    "titleEn": "FRONT FAIRING"
+   },
+   {
+    "title": "ВЕРХНИЙ ВЕТРОВОЙ ЭКРАН",
+    "pageLabel": "2-11",
+    "group": null,
+    "pdfPage": 86,
+    "titleEn": "TOP SHELTER"
+   },
+   {
+    "title": "ЗАДНЕЕ КРЫЛО A",
+    "pageLabel": "2-13",
+    "group": null,
+    "pdfPage": 88,
+    "titleEn": "REAR FENDER A"
+   },
+   {
+    "title": "НИЖНЯЯ КРЫШКА КОЛОКУ",
+    "pageLabel": "2-13",
+    "group": null,
+    "pdfPage": 88,
+    "titleEn": "TRUNK LOWER COVER"
+   },
+   {
+    "title": "КОЛОК",
+    "pageLabel": "2-13",
+    "group": null,
+    "pdfPage": 88,
+    "titleEn": "TRUNK"
+   },
+   {
+    "title": "СУМКИ ЗА СЕДЛОМ",
+    "pageLabel": "2-15",
+    "group": null,
+    "pdfPage": 90,
+    "titleEn": "SADDLEBAGS"
+   },
+   {
+    "title": "ЗАДНЕЕ КРЫЛО B",
+    "pageLabel": "2-16",
+    "group": null,
+    "pdfPage": 91,
+    "titleEn": "REAR FENDER B"
+   },
+   {
+    "title": "СТОЙКИ СУМКИ / КОЛОКУ",
+    "pageLabel": "2-17",
+    "group": null,
+    "pdfPage": 92,
+    "titleEn": "SADDLEBAG/TRUNK STAY"
+   },
+   {
+    "title": "ВЫХЛОПНАЯ СИСТЕМА",
+    "pageLabel": "2-18",
+    "group": null,
+    "pdfPage": 93,
+    "titleEn": "EXHAUST SYSTEM"
+   }
+  ],
+  "titleEn": "FRAME/BODY PANELS/EXHAUST SYSTEM"
+ },
+ {
+  "num": 3,
+  "title": "ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ",
+  "startPage": 98,
+  "items": [
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "3-2",
+    "group": null,
+    "pdfPage": 99,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "РАСПИСАНИЕ ОБСЛУЖИВАНИЯ",
+    "pageLabel": "3-4",
+    "group": null,
+    "pdfPage": 101,
+    "titleEn": "MAINTENANCE SCHEDULE"
+   },
+   {
+    "title": "ТОПЛИВНЫЙ ПРОВОД",
+    "pageLabel": "3-5",
+    "group": null,
+    "pdfPage": 102,
+    "titleEn": "FUEL LINE"
+   },
+   {
+    "title": "ЭКСПЛУАТАЦИЯ ДРОССЕЛЯ",
+    "pageLabel": "3-5",
+    "group": null,
+    "pdfPage": 102,
+    "titleEn": "THROTTLE OPERATION"
+   },
+   {
+    "title": "ВОЗДУШНЫЙ ФИЛЬТР",
+    "pageLabel": "3-6",
+    "group": null,
+    "pdfPage": 103,
+    "titleEn": "AIR CLEANER"
+   },
+   {
+    "title": "ПРИВОД ВЕНТИЛЯЦИИ КАРТЕРА",
+    "pageLabel": "3-7",
+    "group": null,
+    "pdfPage": 104,
+    "titleEn": "CRANKCASE BREATHER"
+   },
+   {
+    "title": "СВЕЧА ЗАЖИГАНИЯ",
+    "pageLabel": "3-8",
+    "group": null,
+    "pdfPage": 105,
+    "titleEn": "SPARK PLUG"
+   },
+   {
+    "title": "ЗАЗОРЫ КЛАПАНОВ",
+    "pageLabel": "3-9",
+    "group": null,
+    "pdfPage": 106,
+    "titleEn": "VALVE CLEARANCE"
+   },
+   {
+    "title": "МОТОРНОЕ МАСЛО",
+    "pageLabel": "3-11",
+    "group": null,
+    "pdfPage": 108,
+    "titleEn": "ENGINE OIL"
+   },
+   {
+    "title": "ФИЛЬТР МОТОРНОГО МАСЛА",
+    "pageLabel": "3-12",
+    "group": null,
+    "pdfPage": 109,
+    "titleEn": "ENGINE OIL FILTER"
+   },
+   {
+    "title": "АНТИФРИЗ",
+    "pageLabel": "3-13",
+    "group": null,
+    "pdfPage": 110,
+    "titleEn": "RADIATOR COOLANT"
+   },
+   {
+    "title": "СИСТЕМА ОХЛАЖДЕНИЯ",
+    "pageLabel": "3-14",
+    "group": null,
+    "pdfPage": 111,
+    "titleEn": "COOLING SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА ДОПОЛНИТЕЛЬНОЙ ПОДАЧИ ВОЗДУХА",
+    "pageLabel": "3-14",
+    "group": null,
+    "pdfPage": 111,
+    "titleEn": "SECONDARY AIR SUPPLY SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА КОНТРОЛЯ ВЫБРОСОВ ИСПАРЕНИЙ",
+    "pageLabel": "3-15",
+    "group": null,
+    "pdfPage": 112,
+    "titleEn": "EVAPORATIVE EMISSION CONTROL SYSTEM"
+   },
+   {
+    "title": "МОТОРНОЕ МАСЛО ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "3-15",
+    "group": null,
+    "pdfPage": 112,
+    "titleEn": "FINAL DRIVE OIL"
+   },
+   {
+    "title": "ТОРМОЗНАЯ ЖИДКОСТЬ",
+    "pageLabel": "3-16",
+    "group": null,
+    "pdfPage": 113,
+    "titleEn": "BRAKE FLUID"
+   },
+   {
+    "title": "ИЗНОС ТОРМОЗНЫХ КОЛЫШКОВ",
+    "pageLabel": "3-17",
+    "group": null,
+    "pdfPage": 114,
+    "titleEn": "BRAKE PAD WEAR"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА",
+    "pageLabel": "3-18",
+    "group": null,
+    "pdfPage": 115,
+    "titleEn": "BRAKE SYSTEM"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ТОРМОЗНОГО СВЕТА",
+    "pageLabel": "3-18",
+    "group": null,
+    "pdfPage": 115,
+    "titleEn": "BRAKE LIGHT SWITCH"
+   },
+   {
+    "title": "НАСТРОЙКА ПЕРЕДНЕГО СВЕТА",
+    "pageLabel": "3-19",
+    "group": null,
+    "pdfPage": 116,
+    "titleEn": "HEADLIGHT AIM"
+   },
+   {
+    "title": "СИСТЕМА СЦЕПЛЕНИЯ",
+    "pageLabel": "3-19",
+    "group": null,
+    "pdfPage": 116,
+    "titleEn": "CLUTCH SYSTEM"
+   },
+   {
+    "title": "ЖИДКОСТЬ СЦЕПЛЕНИЯ",
+    "pageLabel": "3-19",
+    "group": null,
+    "pdfPage": 116,
+    "titleEn": "CLUTCH FLUID"
+   },
+   {
+    "title": "ЭКСПЛУАТАЦИЯ РЕВЕРСА",
+    "pageLabel": "3-20",
+    "group": null,
+    "pdfPage": 117,
+    "titleEn": "REVERSE OPERATION"
+   },
+   {
+    "title": "БОКОВАЯ ПОДСТАВКА",
+    "pageLabel": "3-20",
+    "group": null,
+    "pdfPage": 117,
+    "titleEn": "SIDE STAND"
+   },
+   {
+    "title": "ПОДВЕСКА",
+    "pageLabel": "3-21",
+    "group": null,
+    "pdfPage": 118,
+    "titleEn": "SUSPENSION"
+   },
+   {
+    "title": "ГАЙКИ, БОЛТЫ, КРЕПЕЖ",
+    "pageLabel": "3-21",
+    "group": null,
+    "pdfPage": 118,
+    "titleEn": "NUTS, BOLTS, FASTENERS"
+   },
+   {
+    "title": "КОЛЕСА / ШИНЫ",
+    "pageLabel": "3-22",
+    "group": null,
+    "pdfPage": 119,
+    "titleEn": "WHEELS/TIRES"
+   },
+   {
+    "title": "ПОДШИПНИКИ ВАЛА УПРАВЛЕНИЯ",
+    "pageLabel": "3-22",
+    "group": null,
+    "pdfPage": 119,
+    "titleEn": "STEERING HEAD BEARINGS"
+   }
+  ],
+  "titleEn": "MAINTENANCE"
+ },
+ {
+  "num": 4,
+  "title": "СИСТЕМА СМАЗКИ",
+  "startPage": 120,
+  "items": [
+   {
+    "title": "СХЕМА СИСТЕМЫ СМАЗКИ",
+    "pageLabel": "4-2",
+    "group": null,
+    "pdfPage": 121,
+    "titleEn": "LUBRICATION SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "4-3",
+    "group": null,
+    "pdfPage": 122,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "4-4",
+    "group": null,
+    "pdfPage": 123,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "ПРОВЕРКА МАСЛЯНОГО ДАВЛЕНИЯ",
+    "pageLabel": "4-5",
+    "group": null,
+    "pdfPage": 124,
+    "titleEn": "OIL PRESSURE CHECK"
+   },
+   {
+    "title": "МАСЛЯНАЯ СЕТКА / ДУШКА СНЯТИЯ ДАВЛЕНИЯ",
+    "pageLabel": "4-6",
+    "group": null,
+    "pdfPage": 125,
+    "titleEn": "OIL STRAINER/PRESSURE RELIEF VALVE"
+   },
+   {
+    "title": "МАСЛЯНЫЙ НАСОС",
+    "pageLabel": "4-7",
+    "group": null,
+    "pdfPage": 126,
+    "titleEn": "OIL PUMP"
+   }
+  ],
+  "titleEn": "LUBRICATION SYSTEM"
+ },
+ {
+  "num": 5,
+  "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+  "startPage": 132,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "5-2",
+    "group": null,
+    "pdfPage": 133,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "5-3",
+    "group": null,
+    "pdfPage": 134,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "5-5",
+    "group": null,
+    "pdfPage": 136,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "5-6",
+    "group": null,
+    "pdfPage": 137,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СХЕМА СИСТЕМЫ",
+    "pageLabel": "5-7",
+    "group": null,
+    "pdfPage": 138,
+    "titleEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА PGM-FI (Программируемый впрыск топлива)",
+    "pageLabel": "5-8",
+    "group": null,
+    "pdfPage": 139,
+    "titleEn": "PGM-FI (PROGRAMMED FUEL INJECTION) SYSTEM"
+   },
+   {
+    "title": "КОДЫ НЕИСПРАВНОСТЕЙ ИНДИКАТОРА САМОДИАГНОСТИКИ PGM-FI",
+    "pageLabel": "5-13",
+    "group": null,
+    "pdfPage": 144,
+    "titleEn": "PGM-FI SELF-DIAGNOSIS MALFUNCTION INDICATOR FAILURE CODES"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ PGM-FI",
+    "pageLabel": "5-16",
+    "group": null,
+    "pdfPage": 147,
+    "titleEn": "PGM-FI TROUBLESHOOTING"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ ТОПЛИВНОГО ПРОВОДА",
+    "pageLabel": "5-52",
+    "group": null,
+    "pdfPage": 183,
+    "titleEn": "FUEL LINE INSPECTION"
+   },
+   {
+    "title": "ТОПЛИВНЫЙ НАСОС",
+    "pageLabel": "5-54",
+    "group": null,
+    "pdfPage": 185,
+    "titleEn": "FUEL PUMP"
+   },
+   {
+    "title": "БАК ТОПЛИВА",
+    "pageLabel": "5-56",
+    "group": null,
+    "pdfPage": 187,
+    "titleEn": "FUEL TANK"
+   },
+   {
+    "title": "КОРПУС ВОЗДУШНОГО ФИЛЬТРА",
+    "pageLabel": "5-57",
+    "group": null,
+    "pdfPage": 188,
+    "titleEn": "AIR CLEANER HOUSING"
+   },
+   {
+    "title": "ДРОССЕЛЬНАЯ ЗАСЛОНКА",
+    "pageLabel": "5-58",
+    "group": null,
+    "pdfPage": 189,
+    "titleEn": "THROTTLE BODY"
+   },
+   {
+    "title": "ИНЖЕКТОРЫ ТОПЛИВА",
+    "pageLabel": "5-61",
+    "group": null,
+    "pdfPage": 192,
+    "titleEn": "FUEL INJECTORS"
+   },
+   {
+    "title": "РЕЛЕ ТОПЛИВНОГО НАСОСА",
+    "pageLabel": "5-66",
+    "group": null,
+    "pdfPage": 197,
+    "titleEn": "FUEL PUMP RELAY"
+   },
+   {
+    "title": "СЕНСОРЫ АТМОСФЕРНОГО ДАВЛЕНИЯ / РАЗРЫВНОЙ ДАВЛЕНИЯ",
+    "pageLabel": "5-67",
+    "group": null,
+    "pdfPage": 198,
+    "titleEn": "BARO/MAP SENSORS"
+   },
+   {
+    "title": "СЕНСОР ТЕМПЕРАТУРЫ ВОЗДУХА НА ВХОДЕ",
+    "pageLabel": "5-68",
+    "group": null,
+    "pdfPage": 199,
+    "titleEn": "IAT SENSOR"
+   },
+   {
+    "title": "СЕНСОР ПОЛАЖЕНИЯ ВАЛА РАСПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "5-68",
+    "group": null,
+    "pdfPage": 199,
+    "titleEn": "CAMSHAFT POSITION SENSOR"
+   },
+   {
+    "title": "СЕНСОР КИСЛОРОДА (O2)",
+    "pageLabel": "5-69",
+    "group": null,
+    "pdfPage": 200,
+    "titleEn": "O2 SENSOR"
+   },
+   {
+    "title": "СЕНСОР ДЕРГАНИЯ",
+    "pageLabel": "5-69",
+    "group": null,
+    "pdfPage": 200,
+    "titleEn": "KNOCK SENSOR"
+   },
+   {
+    "title": "СЕНСОР СКОРОСТИ АВТОМОБИЛЯ",
+    "pageLabel": "5-70",
+    "group": null,
+    "pdfPage": 201,
+    "titleEn": "VEHICLE SPEED SENSOR"
+   },
+   {
+    "title": "ЭКМ (БЛОК УПРАВЛЕНИЯ ДВИГАТЕЛЕМ)",
+    "pageLabel": "5-71",
+    "group": null,
+    "pdfPage": 202,
+    "titleEn": "ECM (ENGINE CONTROL MODULE)"
+   },
+   {
+    "title": "СИСТЕМА ДОПОЛНИТЕЛЬНОЙ ПОДАЧИ ВОЗДУХА",
+    "pageLabel": "5-71",
+    "group": null,
+    "pdfPage": 202,
+    "titleEn": "SECONDARY AIR SUPPLY SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА КОНТРОЛЯ ВЫБРОСОВ ИСПАРЕНИЙ (EVAP)",
+    "pageLabel": "5-74",
+    "group": null,
+    "pdfPage": 205,
+    "titleEn": "EVAPORATIVE EMISSION (EVAP) CONTROL SYSTEM"
+   },
+   {
+    "title": "ХОЛОСТЯЙ ХОД ДВИГАТЕЛЯ",
+    "pageLabel": "5-75",
+    "group": null,
+    "pdfPage": 206,
+    "titleEn": "ENGINE IDLE SPEED"
+   }
+  ],
+  "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)"
+ },
+ {
+  "num": 6,
+  "title": "СИСТЕМА ОХЛАЖДЕНИЯ",
+  "startPage": 210,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "6-2",
+    "group": null,
+    "pdfPage": 211,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "6-3",
+    "group": null,
+    "pdfPage": 212,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "6-4",
+    "group": null,
+    "pdfPage": 213,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "ТЕСТЫ СИСТЕМЫ",
+    "pageLabel": "6-5",
+    "group": null,
+    "pdfPage": 214,
+    "titleEn": "SYSTEM TESTING"
+   },
+   {
+    "title": "ЗАМЕНА ОХЛАЖДАЮЩЕЙ ЖИДКОСТИ",
+    "pageLabel": "6-6",
+    "group": null,
+    "pdfPage": 215,
+    "titleEn": "COOLANT REPLACEMENT"
+   },
+   {
+    "title": "РАДИАТОР / ВЕНТИЛЯТОР ОХЛАЖДЕНИЯ",
+    "pageLabel": "6-8",
+    "group": null,
+    "pdfPage": 217,
+    "titleEn": "RADIATOR/COOLING FAN"
+   },
+   {
+    "title": "НАСОС ОХЛАЖДАЮЩЕЙ ЖИДКОСТИ / ТЕРМОСТАТ",
+    "pageLabel": "6-17",
+    "group": null,
+    "pdfPage": 226,
+    "titleEn": "WATER PUMP/THERMOSTAT"
+   }
+  ],
+  "titleEn": "COOLING SYSTEM"
+ },
+ {
+  "num": 7,
+  "title": "СЪЕМ И УСТАНОВКА ДВИГАТЕЛЯ",
+  "startPage": 230,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "7-2",
+    "group": null,
+    "pdfPage": 231,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "7-3",
+    "group": null,
+    "pdfPage": 232,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СЪЕМ ДВИГАТЕЛЯ",
+    "pageLabel": "7-5",
+    "group": null,
+    "pdfPage": 234,
+    "titleEn": "ENGINE REMOVAL"
+   },
+   {
+    "title": "УСТАНОВКА ДВИГАТЕЛЯ",
+    "pageLabel": "7-11",
+    "group": null,
+    "pdfPage": 240,
+    "titleEn": "ENGINE INSTALLATION"
+   }
+  ],
+  "titleEn": "ENGINE REMOVAL/INSTALLATION"
+ },
+ {
+  "num": 8,
+  "title": "ГОЛОВКА ЦИЛИНДРА / ВАЛЬВЫ",
+  "startPage": 250,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "8-2",
+    "group": null,
+    "pdfPage": 251,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "8-3",
+    "group": null,
+    "pdfPage": 252,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "8-5",
+    "group": null,
+    "pdfPage": 254,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "КОМПРЕССИЯ ЦИЛИНДРА",
+    "pageLabel": "8-6",
+    "group": null,
+    "pdfPage": 255,
+    "titleEn": "CYLINDER COMPRESSION"
+   },
+   {
+    "title": "СЪЕМ КРЫШКИ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-6",
+    "group": null,
+    "pdfPage": 255,
+    "titleEn": "CYLINDER HEAD COVER REMOVAL"
+   },
+   {
+    "title": "СЪЕМ ВАЛА РАСПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-7",
+    "group": null,
+    "pdfPage": 256,
+    "titleEn": "CAMSHAFT REMOVAL"
+   },
+   {
+    "title": "СЪЕМ ЦЕПИ ГАЗОРАЗПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-12",
+    "group": null,
+    "pdfPage": 261,
+    "titleEn": "CAM CHAIN REMOVAL"
+   },
+   {
+    "title": "СЪЕМ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-14",
+    "group": null,
+    "pdfPage": 263,
+    "titleEn": "CYLINDER HEAD REMOVAL"
+   },
+   {
+    "title": "ДЕМОНТАЖ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-16",
+    "group": null,
+    "pdfPage": 265,
+    "titleEn": "CYLINDER HEAD DISASSEMBLY"
+   },
+   {
+    "title": "ЗАМЕНА НАПРАВЛЯЮЩЕЙ КЛАПАНА",
+    "pageLabel": "8-19",
+    "group": null,
+    "pdfPage": 268,
+    "titleEn": "VALVE GUIDE REPLACEMENT"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ / ВОССТАНОВЛЕНИЕ СИДЕНЬЯ КЛАПАНА",
+    "pageLabel": "8-19",
+    "group": null,
+    "pdfPage": 268,
+    "titleEn": "VALVE SEAT INSPECTION/REFACING"
+   },
+   {
+    "title": "СБОЙКА ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-22",
+    "group": null,
+    "pdfPage": 271,
+    "titleEn": "CYLINDER HEAD ASSEMBLY"
+   },
+   {
+    "title": "УСТАНОВКА ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-24",
+    "group": null,
+    "pdfPage": 273,
+    "titleEn": "CYLINDER HEAD INSTALLATION"
+   },
+   {
+    "title": "УСТАНОВКА ЦЕПИ ГАЗОРАЗПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-26",
+    "group": null,
+    "pdfPage": 275,
+    "titleEn": "CAM CHAIN INSTALLATION"
+   },
+   {
+    "title": "УСТАНОВКА ВАЛА РАСПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-28",
+    "group": null,
+    "pdfPage": 277,
+    "titleEn": "CAMSHAFT INSTALLATION"
+   },
+   {
+    "title": "УСТАНОВКА КРЫШКИ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-32",
+    "group": null,
+    "pdfPage": 281,
+    "titleEn": "CYLINDER HEAD COVER INSTALLATION"
+   }
+  ],
+  "titleEn": "CYLINDER HEAD/VALVE"
+ },
+ {
+  "num": 9,
+  "title": "СЦЕПЛЕНИЕ",
+  "startPage": 284,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "9-2",
+    "group": null,
+    "pdfPage": 285,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "9-4",
+    "group": null,
+    "pdfPage": 287,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "9-6",
+    "group": null,
+    "pdfPage": 289,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "ЗАМЕНА ЖИДКОСТИ СЦЕПЛЕНИЯ / ПРОКАЧКА",
+    "pageLabel": "9-7",
+    "group": null,
+    "pdfPage": 290,
+    "titleEn": "CLUTCH FLUID REPLACEMENT/AIR BLEEDING"
+   },
+   {
+    "title": "ГЛАВНЫЙ ЦИЛИНДР СЦЕПЛЕНИЯ",
+    "pageLabel": "9-8",
+    "group": null,
+    "pdfPage": 291,
+    "titleEn": "CLUTCH MASTER CYLINDER"
+   },
+   {
+    "title": "ВТОРИЧНЫЙ ЦИЛИНДР СЦЕПЛЕНИЯ",
+    "pageLabel": "9-12",
+    "group": null,
+    "pdfPage": 295,
+    "titleEn": "CLUTCH SLAVE CYLINDER"
+   },
+   {
+    "title": "СЦЕПЛЕНИЕ",
+    "pageLabel": "9-14",
+    "group": null,
+    "pdfPage": 297,
+    "titleEn": "CLUTCH"
+   }
+  ],
+  "titleEn": "CLUTCH"
+ },
+ {
+  "num": 10,
+  "title": "ПЕРЕКЛЮЧАТЕЛЬ ПЕРЕДАЧ / ТРАНСМИССИЯ",
+  "startPage": 310,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "10-2",
+    "group": null,
+    "pdfPage": 311,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "10-4",
+    "group": null,
+    "pdfPage": 313,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "10-7",
+    "group": null,
+    "pdfPage": 316,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "МЕХАНИЗМ ПЕРЕКЛЮЧЕНИЯ ПЕРЕДАЧ",
+    "pageLabel": "10-8",
+    "group": null,
+    "pdfPage": 317,
+    "titleEn": "GEARSHIFT LINKAGE"
+   },
+   {
+    "title": "СЪЕМ ЗАДНЕЙ КРЫШКИ КАРТЕРА",
+    "pageLabel": "10-11",
+    "group": null,
+    "pdfPage": 320,
+    "titleEn": "REAR CRANKCASE COVER REMOVAL"
+   },
+   {
+    "title": "СЪЕМ ПЕРВИЧНЫХ ЗЁМОВ / ВАЛА ВЫХОДА",
+    "pageLabel": "10-13",
+    "group": null,
+    "pdfPage": 322,
+    "titleEn": "PRIMARY GEARS/OUTPUT SHAFT REMOVAL"
+   },
+   {
+    "title": "ЗАМЕНА ПОДШИПНИКОВ КРЫШКИ КАРТЕРА",
+    "pageLabel": "10-19",
+    "group": null,
+    "pdfPage": 328,
+    "titleEn": "CRANKCASE COVER BEARING REPLACEMENT"
+   },
+   {
+    "title": "УСТАНОВКА ПЕРВИЧНЫХ ЗЁМОВ / ВАЛА ВЫХОДА",
+    "pageLabel": "10-20",
+    "group": null,
+    "pdfPage": 329,
+    "titleEn": "PRIMARY GEARS/OUTPUT SHAFT INSTALLATION"
+   },
+   {
+    "title": "УСТАНОВКА ЗАДНЕЙ КРЫШКИ КАРТЕРА",
+    "pageLabel": "10-24",
+    "group": null,
+    "pdfPage": 333,
+    "titleEn": "REAR CRANKCASE COVER INSTALLATION"
+   },
+   {
+    "title": "ДЕМОНТАЖ ТРАНСМИССИИ",
+    "pageLabel": "10-26",
+    "group": null,
+    "pdfPage": 335,
+    "titleEn": "TRANSMISSION DISASSEMBLY"
+   },
+   {
+    "title": "СБОЙКА ТРАНСМИССИИ",
+    "pageLabel": "10-33",
+    "group": null,
+    "pdfPage": 342,
+    "titleEn": "TRANSMISSION ASSEMBLY"
+   }
+  ],
+  "titleEn": "GEARSHIFT LINKAGE/TRANSMISSION"
+ },
+ {
+  "num": 11,
+  "title": "ЦИЛИНДР / ПИСТОН / ВАЛ ВРАТ",
+  "startPage": 348,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "11-2",
+    "group": null,
+    "pdfPage": 349,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "11-3",
+    "group": null,
+    "pdfPage": 350,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "11-5",
+    "group": null,
+    "pdfPage": 352,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "РАЗЪЕМ КАРТЕРА",
+    "pageLabel": "11-6",
+    "group": null,
+    "pdfPage": 353,
+    "titleEn": "CRANKCASE SEPARATION"
+   },
+   {
+    "title": "СЪЕМ ПИСТОНА / ШАТУНА",
+    "pageLabel": "11-7",
+    "group": null,
+    "pdfPage": 354,
+    "titleEn": "PISTON/CONNECTING ROD REMOVAL"
+   },
+   {
+    "title": "ПОДШИПНИК ШАТУННОЙ ШЕЙКИ",
+    "pageLabel": "11-11",
+    "group": null,
+    "pdfPage": 358,
+    "titleEn": "CRANKPIN BEARING"
+   },
+   {
+    "title": "СЪЕМ ВАЛА ВРАТ",
+    "pageLabel": "11-13",
+    "group": null,
+    "pdfPage": 360,
+    "titleEn": "CRANKSHAFT REMOVAL"
+   },
+   {
+    "title": "КОРЕННЫЙ ПОДШИПНИК",
+    "pageLabel": "11-14",
+    "group": null,
+    "pdfPage": 361,
+    "titleEn": "MAIN JOURNAL BEARING"
+   },
+   {
+    "title": "УСТАНОВКА ВАЛА ВРАТ",
+    "pageLabel": "11-16",
+    "group": null,
+    "pdfPage": 363,
+    "titleEn": "CRANKSHAFT INSTALLATION"
+   },
+   {
+    "title": "УСТАНОВКА ПИСТОНА / ШАТУНА",
+    "pageLabel": "11-17",
+    "group": null,
+    "pdfPage": 364,
+    "titleEn": "PISTON/CONNECTING ROD INSTALLATION"
+   },
+   {
+    "title": "СБОЙКА КАРТЕРА",
+    "pageLabel": "11-22",
+    "group": null,
+    "pdfPage": 369,
+    "titleEn": "CRANKCASE ASSEMBLY"
+   }
+  ],
+  "titleEn": "CYLINDER/PISTON/CRANKSHAFT"
+ },
+ {
+  "num": 12,
+  "title": "ФИНАЛЬНАЯ ПЕРЕДАЧА",
+  "startPage": 372,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "12-2",
+    "group": null,
+    "pdfPage": 373,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "12-3",
+    "group": null,
+    "pdfPage": 374,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "12-6",
+    "group": null,
+    "pdfPage": 377,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "СЪЕМ ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-7",
+    "group": null,
+    "pdfPage": 378,
+    "titleEn": "FINAL DRIVE REMOVAL"
+   },
+   {
+    "title": "ДЕМОНТАЖ / ИНСПЕКЦИЯ ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-9",
+    "group": null,
+    "pdfPage": 380,
+    "titleEn": "FINAL DRIVE DISASSEMBLY/ INSPECTION"
+   },
+   {
+    "title": "ЗАМЕНА ПОДШИПНИКОВ КОРПУСА",
+    "pageLabel": "12-14",
+    "group": null,
+    "pdfPage": 385,
+    "titleEn": "CASE BEARING REPLACEMENT"
+   },
+   {
+    "title": "СБОЙКА ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-17",
+    "group": null,
+    "pdfPage": 388,
+    "titleEn": "FINAL DRIVE ASSEMBLY"
+   },
+   {
+    "title": "УСТАНОВКА ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-22",
+    "group": null,
+    "pdfPage": 393,
+    "titleEn": "FINAL DRIVE INSTALLATION"
+   }
+  ],
+  "titleEn": "FINAL DRIVE"
+ },
+ {
+  "num": 13,
+  "title": "ПЕРЕДНИЕ КОЛЕСА / ПОДВЕСКА / УПРАВЛЕНИЕ",
+  "startPage": 396,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "13-2",
+    "group": null,
+    "pdfPage": 397,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "13-3",
+    "group": null,
+    "pdfPage": 398,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "13-6",
+    "group": null,
+    "pdfPage": 401,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "РУЛЬ",
+    "pageLabel": "13-7",
+    "group": null,
+    "pdfPage": 402,
+    "titleEn": "HANDLEBAR"
+   },
+   {
+    "title": "ПЕРЕДНЕЕ КОЛЕСО",
+    "pageLabel": "13-16",
+    "group": null,
+    "pdfPage": 411,
+    "titleEn": "FRONT WHEEL"
+   },
+   {
+    "title": "ВИЛКА",
+    "pageLabel": "13-24",
+    "group": null,
+    "pdfPage": 419,
+    "titleEn": "FORK"
+   },
+   {
+    "title": "ВАЛ УПРАВЛЕНИЯ",
+    "pageLabel": "13-41",
+    "group": null,
+    "pdfPage": 436,
+    "titleEn": "STEERING STEM"
+   }
+  ],
+  "titleEn": "FRONT WHEEL/SUSPENSION/STEERING"
+ },
+ {
+  "num": 14,
+  "title": "ЗАДНИЕ КОЛЕСА / ПОДВЕСКА",
+  "startPage": 446,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pageLabel": "14-2",
+    "group": null,
+    "pdfPage": 447,
+    "titleEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "14-3",
+    "group": null,
+    "pdfPage": 448,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "14-5",
+    "group": null,
+    "pdfPage": 450,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "ЗАДНЕЕ КОЛЕСО",
+    "pageLabel": "14-14",
+    "group": null,
+    "pdfPage": 459,
+    "titleEn": "REAR WHEEL"
+   },
+   {
+    "title": "АМОРТИЗАТОР",
+    "pageLabel": "14-16",
+    "group": null,
+    "pdfPage": 461,
+    "titleEn": "SHOCK ABSORBER"
+   },
+   {
+    "title": "СВЯЗЬ ПОДВЕСКИ",
+    "pageLabel": "14-18",
+    "group": null,
+    "pdfPage": 463,
+    "titleEn": "SUSPENSION LINKAGE"
+   },
+   {
+    "title": "МАХОВИК",
+    "pageLabel": "14-22",
+    "group": null,
+    "pdfPage": 467,
+    "titleEn": "SWINGARM"
+   },
+   {
+    "title": "РЕЛЕ КОНТРОЛЯ ВЫСОТЫ ПОДВЕСКИ",
+    "pageLabel": "14-29",
+    "group": null,
+    "pdfPage": 474,
+    "titleEn": "SUSPENSION LEVEL RELAY"
+   }
+  ],
+  "titleEn": "REAR WHEEL/SUSPENSION"
+ },
+ {
+  "num": 15,
+  "title": "ТОРМОЗНАЯ СИСТЕМА (Стандарт)",
+  "startPage": 478,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "15-2",
+    "group": null,
+    "pdfPage": 479,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "15-3",
+    "group": null,
+    "pdfPage": 480,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "15-5",
+    "group": null,
+    "pdfPage": 482,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "ЗАМЕНА ТОРМОЗНОЙ ЖИДКОСТИ / ПРОКАЧКА",
+    "pageLabel": "15-6",
+    "group": null,
+    "pdfPage": 483,
+    "titleEn": "BRAKE FLUID REPLACEMENT/AIR BLEEDING"
+   },
+   {
+    "title": "ТОРМОЗНЫЕ КОЛЫШКИ / ДИСК",
+    "pageLabel": "15-13",
+    "group": null,
+    "pdfPage": 490,
+    "titleEn": "BRAKE PAD/DISC"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ГЛАВНЫЙ ЦИЛИНДР ТОРМОЗА",
+    "pageLabel": "15-15",
+    "group": null,
+    "pdfPage": 492,
+    "titleEn": "FRONT MASTER CYLINDER"
+   },
+   {
+    "title": "ЗАДНИЙ ГЛАВНЫЙ ЦИЛИНДР ТОРМОЗА / ТОРМОЗНАЯ ПОДНОЖКА",
+    "pageLabel": "15-19",
+    "group": null,
+    "pdfPage": 496,
+    "titleEn": "REAR MASTER CYLINDER/BRAKE PEDAL"
+   },
+   {
+    "title": "ВТОРИЧНЫЙ ГЛАВНЫЙ ЦИЛИНДР ТОРМОЗА",
+    "pageLabel": "15-24",
+    "group": null,
+    "pdfPage": 501,
+    "titleEn": "SECONDARY MASTER CYLINDER"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ТОРМОЗНЫЙ КАЛИПЕР",
+    "pageLabel": "15-27",
+    "group": null,
+    "pdfPage": 504,
+    "titleEn": "FRONT BRAKE CALIPER"
+   },
+   {
+    "title": "ЗАДНИЙ ТОРМОЗНЫЙ КАЛИПЕР",
+    "pageLabel": "15-34",
+    "group": null,
+    "pdfPage": 511,
+    "titleEn": "REAR BRAKE CALIPER"
+   },
+   {
+    "title": "ДУШКА ЗАДЕРЖКИ",
+    "pageLabel": "15-38",
+    "group": null,
+    "pdfPage": 515,
+    "titleEn": "DELAY VALVE"
+   },
+   {
+    "title": "ПРОПОРЦИОНАЛЬНАЯ ДУШКА УПРАВЛЕНИЯ (PCV)",
+    "pageLabel": "15-39",
+    "group": null,
+    "pdfPage": 516,
+    "titleEn": "PROPORTIONAL CONTROL VALVE (PCV)"
+   }
+  ],
+  "titleEn": "BRAKE SYSTEM (Standard)"
+ },
+ {
+  "num": 16,
+  "title": "ТОРМОЗНАЯ СИСТЕМА (ABS)",
+  "startPage": 518,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "16-2",
+    "group": null,
+    "pdfPage": 519,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "16-3",
+    "group": null,
+    "pdfPage": 520,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СОЕДИНЕНИЯ ЖГУТОВ / РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "16-4",
+    "group": null,
+    "pdfPage": 521,
+    "titleEn": "SYSTEM WIRING CONNECTIONS/ LOCATIONS"
+   },
+   {
+    "title": "ПЕРЕД НАЧАЛОМ ДИАГНОСТИКИ НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "16-5",
+    "group": null,
+    "pdfPage": 522,
+    "titleEn": "BEFORE STARTING TROUBLESHOOTING"
+   },
+   {
+    "title": "ПЕРЕД ДИАГНОСТИКОЙ НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "16-8",
+    "group": null,
+    "pdfPage": 525,
+    "titleEn": "BEFORE TROUBLESHOOTING"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "16-10",
+    "group": null,
+    "pdfPage": 527,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "СЕНСОР СКОРОСТИ КОЛЕСА",
+    "pageLabel": "16-29",
+    "group": null,
+    "pdfPage": 546,
+    "titleEn": "WHEEL SPEED SENSOR"
+   },
+   {
+    "title": "АБС-МОДУЛЬ",
+    "pageLabel": "16-31",
+    "group": null,
+    "pdfPage": 548,
+    "titleEn": "ABS MODULATOR"
+   }
+  ],
+  "titleEn": "BRAKE SYSTEM (ABS)"
+ },
+ {
+  "num": 17,
+  "title": "АКБ / СИСТЕМА ЗАРЯДКИ",
+  "startPage": 550,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "17-2",
+    "group": null,
+    "pdfPage": 551,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СХЕМА СИСТЕМЫ",
+    "pageLabel": "17-2",
+    "group": null,
+    "pdfPage": 551,
+    "titleEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "17-3",
+    "group": null,
+    "pdfPage": 552,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "17-5",
+    "group": null,
+    "pdfPage": 554,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "АКБ",
+    "pageLabel": "17-6",
+    "group": null,
+    "pdfPage": 555,
+    "titleEn": "BATTERY"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ СИСТЕМЫ ЗАРЯДКИ",
+    "pageLabel": "17-9",
+    "group": null,
+    "pdfPage": 558,
+    "titleEn": "CHARGING SYSTEM INSPECTION"
+   },
+   {
+    "title": "ГЕНЕРАТОР",
+    "pageLabel": "17-10",
+    "group": null,
+    "pdfPage": 559,
+    "titleEn": "ALTERNATOR"
+   }
+  ],
+  "titleEn": "BATTERY/CHARGING SYSTEM"
+ },
+ {
+  "num": 18,
+  "title": "СИСТЕМА ЗАЖИГАНИЯ",
+  "startPage": 570,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "18-2",
+    "group": null,
+    "pdfPage": 571,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СХЕМА СИСТЕМЫ",
+    "pageLabel": "18-2",
+    "group": null,
+    "pdfPage": 571,
+    "titleEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "18-3",
+    "group": null,
+    "pdfPage": 572,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "18-4",
+    "group": null,
+    "pdfPage": 573,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ СИСТЕМЫ ЗАЖИГАНИЯ",
+    "pageLabel": "18-5",
+    "group": null,
+    "pdfPage": 574,
+    "titleEn": "IGNITION SYSTEM INSPECTION"
+   },
+   {
+    "title": "КАТУШКА ЗАЖИГАНИЯ",
+    "pageLabel": "18-7",
+    "group": null,
+    "pdfPage": 576,
+    "titleEn": "IGNITION COIL"
+   },
+   {
+    "title": "ГЕНЕРАТОР ИМПУЛЬСОВ ЗАЖИГАНИЯ",
+    "pageLabel": "18-9",
+    "group": null,
+    "pdfPage": 578,
+    "titleEn": "IGNITION PULSE GENERATOR"
+   },
+   {
+    "title": "РЕЛЕ ЗАЖИГАНИЯ PGM-FI",
+    "pageLabel": "18-11",
+    "group": null,
+    "pdfPage": 580,
+    "titleEn": "PGM-FI IGNITION RELAY"
+   },
+   {
+    "title": "СЕНСОР НАКЛОНА ДВИГАТЕЛЯ",
+    "pageLabel": "18-13",
+    "group": null,
+    "pdfPage": 582,
+    "titleEn": "BANK ANGLE SENSOR"
+   },
+   {
+    "title": "НАСТРОЙКА ФАЗЫ ЗАЖИГАНИЯ",
+    "pageLabel": "18-14",
+    "group": null,
+    "pdfPage": 583,
+    "titleEn": "IGNITION TIMING"
+   }
+  ],
+  "titleEn": "IGNITION SYSTEM"
+ },
+ {
+  "num": 19,
+  "title": "СИСТЕМА СТАРТЕРА / РЕВЕРСА",
+  "startPage": 584,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "19-2",
+    "group": null,
+    "pdfPage": 585,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СХЕМА СИСТЕМЫ СТАРТЕРА",
+    "pageLabel": "19-2",
+    "group": null,
+    "pdfPage": 585,
+    "titleEn": "STARTER SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СХЕМА СИСТЕМЫ РЕВЕРСА",
+    "pageLabel": "19-3",
+    "group": null,
+    "pdfPage": 586,
+    "titleEn": "REVERSE SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "19-4",
+    "group": null,
+    "pdfPage": 587,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "19-6",
+    "group": null,
+    "pdfPage": 589,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "МОТОР СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "19-17",
+    "group": null,
+    "pdfPage": 600,
+    "titleEn": "STARTER/REVERSE MOTOR"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ РЕЛЕ СТАРТЕРА A",
+    "pageLabel": "19-24",
+    "group": null,
+    "pdfPage": 607,
+    "titleEn": "STARTER RELAY SWITCH A"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ РЕЛЕ СТАРТЕРА B",
+    "pageLabel": "19-25",
+    "group": null,
+    "pdfPage": 608,
+    "titleEn": "STARTER RELAY SWITCH B"
+   },
+   {
+    "title": "РЕЛЕ РЕВЕРСА",
+    "pageLabel": "19-26",
+    "group": null,
+    "pdfPage": 609,
+    "titleEn": "REVERSE RELAY"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ РЕВЕРСА",
+    "pageLabel": "19-27",
+    "group": null,
+    "pdfPage": 610,
+    "titleEn": "REVERSE SWITCH"
+   },
+   {
+    "title": "СБОРКА РЕГУЛЯТОРА РЕВЕРСА",
+    "pageLabel": "19-28",
+    "group": null,
+    "pdfPage": 611,
+    "titleEn": "REVERSE REGULATOR ASSEMBLY"
+   },
+   {
+    "title": "СБОРКА РЕЗИСТОРА РЕВЕРСА",
+    "pageLabel": "19-30",
+    "group": null,
+    "pdfPage": 613,
+    "titleEn": "REVERSE RESISTOR ASSEMBLY"
+   },
+   {
+    "title": "РЕЛЕ КОНТРОЛЯ ПИТАНИЯ",
+    "pageLabel": "19-31",
+    "group": null,
+    "pdfPage": 614,
+    "titleEn": "POWER CONTROL RELAY"
+   },
+   {
+    "title": "РЕЛЕ ОГРАНИЧЕНИЯ СКОРОСТИ",
+    "pageLabel": "19-33",
+    "group": null,
+    "pdfPage": 616,
+    "titleEn": "SPEED LIMITER RELAY"
+   },
+   {
+    "title": "РЕЛЕ ВКЛЮЧЕНИЯ РЕВЕРСА",
+    "pageLabel": "19-34",
+    "group": null,
+    "pdfPage": 617,
+    "titleEn": "REVERSE SHIFT RELAY"
+   },
+   {
+    "title": "АКТУАТОР ВКЛЮЧЕНИЯ РЕВЕРСА",
+    "pageLabel": "19-36",
+    "group": null,
+    "pdfPage": 619,
+    "titleEn": "REVERSE SHIFT ACTUATOR"
+   },
+   {
+    "title": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pageLabel": "19-39",
+    "group": null,
+    "pdfPage": 622,
+    "titleEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "МЕХАНИЗМ ВКЛЮЧЕНИЯ РЕВЕРСА",
+    "pageLabel": "19-42",
+    "group": null,
+    "pdfPage": 625,
+    "titleEn": "REVERSE SHIFT MECHANISM"
+   }
+  ],
+  "titleEn": "STARTER/REVERSE SYSTEM"
+ },
+ {
+  "num": 20,
+  "title": "ОСВЕТИТЕЛИ / ПРИБОРЫ / ПЕРЕКЛЮЧАТЕЛИ",
+  "startPage": 634,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "20-2",
+    "group": null,
+    "pdfPage": 635,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "20-3",
+    "group": null,
+    "pdfPage": 636,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "20-4",
+    "group": null,
+    "pdfPage": 637,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ОСВЕТИТЕЛЬ",
+    "pageLabel": "20-8",
+    "group": null,
+    "pdfPage": 641,
+    "titleEn": "HEADLIGHT"
+   },
+   {
+    "title": "РЕГУЛИРОВКА ПЕРЕДНЕГО СВЕТА",
+    "pageLabel": "20-9",
+    "group": null,
+    "pdfPage": 642,
+    "titleEn": "HEADLIGHT ADJUSTER"
+   },
+   {
+    "title": "ПЕРЕДНЕЕ УКАЗАТЕЛЬНОЕ СВЕТЛО",
+    "pageLabel": "20-13",
+    "group": null,
+    "pdfPage": 646,
+    "titleEn": "FRONT TURN SIGNAL LIGHT"
+   },
+   {
+    "title": "КОМБИНИРОВАННЫЙ СВЕТИЛЬНИК СУМКИ ЗА СЕДЛОМ",
+    "pageLabel": "20-14",
+    "group": null,
+    "pdfPage": 647,
+    "titleEn": "SADDLEBAG COMBINATION LIGHT"
+   },
+   {
+    "title": "ТОРМОЗНЫЙ СВЕТ / ЗАДНЕЕ СТОПОВОЕ СВЕТИЛЬНИК КОЛОКУ",
+    "pageLabel": "20-15",
+    "group": null,
+    "pdfPage": 648,
+    "titleEn": "TRUNK BRAKE/TAILLIGHT"
+   },
+   {
+    "title": "СВЕТИЛЬНИК НОМЕРНОЙ РЕГИСТРАЦИИ",
+    "pageLabel": "20-15",
+    "group": null,
+    "pdfPage": 648,
+    "titleEn": "LICENSE LIGHT"
+   },
+   {
+    "title": "БЛОК РЕЛЕ",
+    "pageLabel": "20-16",
+    "group": null,
+    "pdfPage": 649,
+    "titleEn": "RELAY BOX"
+   },
+   {
+    "title": "КОМБИНИРОВАННЫЙ ПРИБОР",
+    "pageLabel": "20-17",
+    "group": null,
+    "pdfPage": 650,
+    "titleEn": "COMBINATION METER"
+   },
+   {
+    "title": "СПЕДОМЕТР",
+    "pageLabel": "20-20",
+    "group": null,
+    "pdfPage": 653,
+    "titleEn": "SPEEDOMETER"
+   },
+   {
+    "title": "ТАХОМЕТР",
+    "pageLabel": "20-21",
+    "group": null,
+    "pdfPage": 654,
+    "titleEn": "TACHOMETER"
+   },
+   {
+    "title": "ПРИБОР ТЕМПЕРАТУРЫ ОХЛАЖДАЮЩЕЙ ЖИДКОСТИ / СЕНСОР ECT",
+    "pageLabel": "20-22",
+    "group": null,
+    "pdfPage": 655,
+    "titleEn": "COOLANT TEMPERATURE GAUGE/ ECT SENSOR"
+   },
+   {
+    "title": "УКАЗАТЕЛЬ УРОВНЯ ТОПЛИВА / ИНДИКАТОР НИЗКОГО УРОВНЯ",
+    "pageLabel": "20-24",
+    "group": null,
+    "pdfPage": 657,
+    "titleEn": "FUEL GAUGE/LOW FUEL INDICATOR"
+   },
+   {
+    "title": "ИНДИКАТОР НУЛЁВОЙ ПЕРЕДАЧИ",
+    "pageLabel": "20-26",
+    "group": null,
+    "pdfPage": 659,
+    "titleEn": "NEUTRAL INDICATOR"
+   },
+   {
+    "title": "ИНДИКАТОР МАСЛЯНОГО ДАВЛЕНИЯ",
+    "pageLabel": "20-27",
+    "group": null,
+    "pdfPage": 660,
+    "titleEn": "OIL PRESSURE INDICATOR"
+   },
+   {
+    "title": "РЕЛЕ УКАЗАТЕЛЬНОГО СВЕТА",
+    "pageLabel": "20-27",
+    "group": null,
+    "pdfPage": 660,
+    "titleEn": "TURN SIGNAL RELAY"
+   },
+   {
+    "title": "БЛОК ОТКЛЮЧЕНИЯ УКАЗАТЕЛЬНОГО СВЕТА",
+    "pageLabel": "20-28",
+    "group": null,
+    "pdfPage": 661,
+    "titleEn": "TURN SIGNAL CANCEL UNIT"
+   },
+   {
+    "title": "РЕЛЕ ОСВЕТИТЕЛЯ ПОЛАЖЕНИЯ",
+    "pageLabel": "20-31",
+    "group": null,
+    "pdfPage": 664,
+    "titleEn": "POSITION LIGHT RELAY"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ АВАРИЙНОЙ СИГНАЛИЗАЦИИ",
+    "pageLabel": "20-32",
+    "group": null,
+    "pdfPage": 665,
+    "titleEn": "HAZARD SWITCH"
+   },
+   {
+    "title": "СЕНСОР ТЕМПЕРАТУРЫ ВНЕШНЕГО ВОЗДУХА",
+    "pageLabel": "20-33",
+    "group": null,
+    "pdfPage": 666,
+    "titleEn": "OPEN AIR TEMPERATURE SENSOR"
+   },
+   {
+    "title": "ВЫКЛЮЧАТЕЛЬ ЗАЖИГАНИЯ",
+    "pageLabel": "20-34",
+    "group": null,
+    "pdfPage": 667,
+    "titleEn": "IGNITION SWITCH"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ НА РУЛЕ",
+    "pageLabel": "20-35",
+    "group": null,
+    "pdfPage": 668,
+    "titleEn": "HANDLEBAR SWITCH"
+   },
+   {
+    "title": "ТОРМОЗНЫЙ ПЕРЕКЛЮЧАТЕЛЬ",
+    "pageLabel": "20-37",
+    "group": null,
+    "pdfPage": 670,
+    "titleEn": "BRAKE SWITCH"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ СЦЕПЛЕНИЯ",
+    "pageLabel": "20-37",
+    "group": null,
+    "pdfPage": 670,
+    "titleEn": "CLUTCH SWITCH"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ПОЛАЖЕНИЯ ПЕРЕДАЧ",
+    "pageLabel": "20-38",
+    "group": null,
+    "pdfPage": 671,
+    "titleEn": "GEAR POSITION SWITCH"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ БОКОВОЙ ПОДСТАВКИ",
+    "pageLabel": "20-39",
+    "group": null,
+    "pdfPage": 672,
+    "titleEn": "SIDE STAND SWITCH"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ МНОГОИНДИКАТОРНОГО ЭКРАНА",
+    "pageLabel": "20-40",
+    "group": null,
+    "pdfPage": 673,
+    "titleEn": "MULTI-DISPLAY CONTROL SWITCH"
+   },
+   {
+    "title": "ГУДОК",
+    "pageLabel": "20-40",
+    "group": null,
+    "pdfPage": 673,
+    "titleEn": "HORN"
+   },
+   {
+    "title": "РЕЛЕ УПРАВЛЕНИЯ ВЕНТИЛЯТОРОМ",
+    "pageLabel": "20-41",
+    "group": null,
+    "pdfPage": 674,
+    "titleEn": "FAN CONTROL RELAY"
+   },
+   {
+    "title": "СИСТЕМА ЭЛЕКТРОУПРАВЛЕНИЯ ЗАМКОМ КОЛОКУ",
+    "pageLabel": "20-42",
+    "group": null,
+    "pdfPage": 675,
+    "titleEn": "POWER TRUNK LOCK SYSTEM"
+   }
+  ],
+  "titleEn": "LIGHTS/METERS/SWITCHES"
+ },
+ {
+  "num": 21,
+  "title": "СИСТЕМА АВТОПИЛОТА",
+  "startPage": 684,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "21-2",
+    "group": null,
+    "pdfPage": 685,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "21-3",
+    "group": null,
+    "pdfPage": 686,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "21-4",
+    "group": null,
+    "pdfPage": 687,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pageLabel": "21-9",
+    "group": null,
+    "pdfPage": 692,
+    "titleEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ ЗАЖИГАНИЯ АВТОПИЛОТА",
+    "pageLabel": "21-11",
+    "group": null,
+    "pdfPage": 694,
+    "titleEn": "IGNITION CRUISE RELAY"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ АВТОПИЛОТА",
+    "pageLabel": "21-13",
+    "group": null,
+    "pdfPage": 696,
+    "titleEn": "CRUISE CONTROL SWITCH"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ОТКЛЮЧЕНИЯ АВТОПИЛОТА",
+    "pageLabel": "21-14",
+    "group": null,
+    "pdfPage": 697,
+    "titleEn": "CRUISE CANCEL SWITCH"
+   },
+   {
+    "title": "АКТУАТОР АВТОПИЛОТА",
+    "pageLabel": "21-16",
+    "group": null,
+    "pdfPage": 699,
+    "titleEn": "CRUISE ACTUATOR"
+   }
+  ],
+  "titleEn": "CRUISE CONTROL SYSTEM"
+ },
+ {
+  "num": 22,
+  "title": "АУДИОСИСТЕМА",
+  "startPage": 702,
+  "items": [
+   {
+    "title": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "22-2",
+    "group": null,
+    "pdfPage": 703,
+    "titleEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "22-3",
+    "group": null,
+    "pdfPage": 704,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "22-4",
+    "group": null,
+    "pdfPage": 705,
+    "titleEn": "TROUBLESHOOTING"
+   },
+   {
+    "title": "АУДИОУСТРОЙСТВО",
+    "pageLabel": "22-6",
+    "group": null,
+    "pdfPage": 707,
+    "titleEn": "AUDIO UNIT"
+   },
+   {
+    "title": "АУДИОПЕРЕКЛЮЧАТЕЛЬ",
+    "pageLabel": "22-9",
+    "group": null,
+    "pdfPage": 710,
+    "titleEn": "AUDIO SWITCH"
+   },
+   {
+    "title": "АНТЕННА",
+    "pageLabel": "22-11",
+    "group": null,
+    "pdfPage": 712,
+    "titleEn": "ANTENNA"
+   },
+   {
+    "title": "ГРОМКОГОВОРКА",
+    "pageLabel": "22-12",
+    "group": null,
+    "pdfPage": 713,
+    "titleEn": "SPEAKER"
+   },
+   {
+    "title": "ПРОВОД СОЕДИНЕНИЯ АУДИОНАБОРА",
+    "pageLabel": "22-12",
+    "group": null,
+    "pdfPage": 713,
+    "titleEn": "HEADSET JUNCTION WIRE"
+   }
+  ],
+  "titleEn": "AUDIO SYSTEM"
+ },
+ {
+  "num": 23,
+  "title": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+  "startPage": 714,
+  "items": [
+   {
+    "title": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pageLabel": "23-3",
+    "group": null,
+    "pdfPage": 716,
+    "titleEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "БЛОК ПРЕДОХРАНИТЕЛЕЙ",
+    "pageLabel": "23-3",
+    "group": null,
+    "pdfPage": 716,
+    "titleEn": "FUSE BOX"
+   },
+   {
+    "title": "СИСТЕМА КОНТРОЛЯ ВЫСОТЫ ПОДВЕСКИ",
+    "pageLabel": "23-5",
+    "group": null,
+    "pdfPage": 718,
+    "titleEn": "SUSPENSION LEVEL CONTROL SYSTEM"
+   },
+   {
+    "title": "АБС",
+    "pageLabel": "23-7",
+    "group": null,
+    "pdfPage": 720,
+    "titleEn": "ABS"
+   },
+   {
+    "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+    "pageLabel": "23-9",
+    "group": null,
+    "pdfPage": 722,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)"
+   },
+   {
+    "title": "СИСТЕМА ОХЛАЖДЕНИЯ / ЗАРЯДКИ / ЗАЖИГАНИЯ",
+    "pageLabel": "23-11",
+    "group": null,
+    "pdfPage": 724,
+    "titleEn": "COOLING/CHARGING/IGNITION SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "23-12",
+    "group": null,
+    "pdfPage": 725,
+    "titleEn": "STARTER/REVERSE SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА ОСВЕЩЕНИЯ",
+    "pageLabel": "23-13",
+    "group": null,
+    "pdfPage": 726,
+    "titleEn": "LIGHTING SYSTEM"
+   },
+   {
+    "title": "УКАЗАТЕЛЬНЫЕ СВЕТА / ГУДОК",
+    "pageLabel": "23-14",
+    "group": null,
+    "pdfPage": 727,
+    "titleEn": "TURN SIGNAL LIGHTS/HORN"
+   },
+   {
+    "title": "КОМБИНИРОВАННЫЙ ПРИБОР",
+    "pageLabel": "23-15",
+    "group": null,
+    "pdfPage": 728,
+    "titleEn": "COMBINATION METER"
+   },
+   {
+    "title": "СИСТЕМА УПРАВЛЕНИЯ ЗАМКОМ КОЛОКУ (ACC/TRUNK)",
+    "pageLabel": "23-17",
+    "group": null,
+    "pdfPage": 730,
+    "titleEn": "ACC/TRUNK LOCK CONTROL SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА АВТОПИЛОТА",
+    "pageLabel": "23-20",
+    "group": null,
+    "pdfPage": 733,
+    "titleEn": "CRUISE CONTROL SYSTEM"
+   },
+   {
+    "title": "АУДИОСИСТЕМА",
+    "pageLabel": "23-22",
+    "group": null,
+    "pdfPage": 735,
+    "titleEn": "AUDIO SYSTEM"
+   }
+  ],
+  "titleEn": "WIRING DIAGRAM"
+ },
+ {
+  "num": 24,
+  "title": "ТЕХНИЧЕСКИЕ ОСОБЕННОСТИ",
+  "startPage": 737,
+  "items": [
+   {
+    "title": "ДУШКА УПРАВЛЕНИЯ ХОЛОСТОЙХОДНЫМ ВОЗДУХОМ (IAC)",
+    "pageLabel": "24-2",
+    "group": null,
+    "pdfPage": 738,
+    "titleEn": "IDLE AIR CONTROL (IAC) VALVE"
+   },
+   {
+    "title": "ГИДРАВЛИЧЕСКОЕ УСИЛЕННОЕ СЦЕПЛЕНИЕ",
+    "pageLabel": "24-4",
+    "group": null,
+    "pdfPage": 740,
+    "titleEn": "HYDRAULICALLY ASSISTED CLUTCH"
+   },
+   {
+    "title": "СИСТЕМА СЕРВОДУХОВОГО УПРАВЛЕНИЯ ТОРМОЗАМИ (ANTI-DIVE)",
+    "pageLabel": "24-5",
+    "group": null,
+    "pdfPage": 741,
+    "titleEn": "BRAKE SERVO-PRESSURE SENSING ANTI-DIVE SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА ЭЛЕКТРОННОЙ НАСТРОЙКИ ПРЕДНАПРЯЖЕНИЯ ПРУЖИНЫ ЗАДНЕЙ ПОДВЕСКИ",
+    "pageLabel": "24-6",
+    "group": null,
+    "pdfPage": 742,
+    "titleEn": "ELECTRIC REAR SUSPENSION SPRING PRELOAD ADJUSTMENT SYSTEM"
+   },
+   {
+    "title": "СИСТЕМА АНТИБЛОКИРОВКИ ТОРМОЗОВ (ABS)",
+    "pageLabel": "24-7",
+    "group": null,
+    "pdfPage": 743,
+    "titleEn": "ANTI-LOCK BRAKE SYSTEM (ABS)"
+   },
+   {
+    "title": "КАТУШКА ЗАЖИГАНИЯ С ВНУТРЕННИМ ПОДСВЕЧНИКОМ",
+    "pageLabel": "24-12",
+    "group": null,
+    "pdfPage": 748,
+    "titleEn": "IGNITION COIL WITH BUILT-IN IGNITER"
+   }
+  ],
+  "titleEn": "TECHNICAL FEATURES"
+ },
+ {
+  "num": 25,
+  "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ",
+  "startPage": 749,
+  "items": [
+   {
+    "title": "ДВИГАТЕЛЬ НЕ РАБОТАЕТ ИЛИ НЕ ЗАПУСКАЕТСЯ",
+    "pageLabel": "25-2",
+    "group": null,
+    "pdfPage": 750,
+    "titleEn": "ENGINE DOES NOT START OR IS HARD TO START"
+   },
+   {
+    "title": "ДВИГАТЕЛЬ ЛИШЁН МОЩНОСТИ",
+    "pageLabel": "25-3",
+    "group": null,
+    "pdfPage": 751,
+    "titleEn": "ENGINE LACKS POWER"
+   },
+   {
+    "title": "ПЛОХАЯ ДИНАМИКА НА НИЗКИХ СКОРОСТЯХ И ХОЛОСТОМ ХОДЕ",
+    "pageLabel": "25-5",
+    "group": null,
+    "pdfPage": 753,
+    "titleEn": "POOR PERFORMANCE AT LOW AND IDLE SPEED"
+   },
+   {
+    "title": "ПЛОХАЯ ДИНАМИКА НА ВЫСОКОЙ СКОРОСТИ",
+    "pageLabel": "25-6",
+    "group": null,
+    "pdfPage": 754,
+    "titleEn": "POOR PERFORMANCE AT HIGH SPEED"
+   },
+   {
+    "title": "ПЛОХОЕ УПРАВЛЕНИЕ",
+    "pageLabel": "25-6",
+    "group": null,
+    "pdfPage": 754,
+    "titleEn": "POOR HANDLING"
+   }
+  ],
+  "titleEn": "TROUBLESHOOTING"
+ },
+ {
+  "num": 26,
+  "title": "ИНДЕКС",
+  "startPage": 755,
+  "items": [
+   {
+    "title": "АБС-МОДУЛЬ",
+    "pageLabel": "16-31",
+    "group": null,
+    "pdfPage": 548,
+    "titleEn": "ABS MODULATOR"
+   },
+   {
+    "title": "ВОЗДУШНЫЙ ФИЛЬТР",
+    "pageLabel": "3-6",
+    "group": null,
+    "pdfPage": 103,
+    "titleEn": "AIR CLEANER"
+   },
+   {
+    "title": "КОРПУС ВОЗДУШНОГО ФИЛЬТРА",
+    "pageLabel": "5-57",
+    "group": null,
+    "pdfPage": 188,
+    "titleEn": "AIR CLEANER HOUSING"
+   },
+   {
+    "title": "ГЕНЕРАТОР",
+    "pageLabel": "17-10",
+    "group": null,
+    "pdfPage": 559,
+    "titleEn": "ALTERNATOR"
+   },
+   {
+    "title": "АНТЕННА",
+    "pageLabel": "22-11",
+    "group": null,
+    "pdfPage": 712,
+    "titleEn": "ANTENNA"
+   },
+   {
+    "title": "СИСТЕМА АНТИБЛОКИРОВКИ ТОРМОЗОВ (ABS)",
+    "pageLabel": "24-7",
+    "group": null,
+    "pdfPage": 743,
+    "titleEn": "ANTI-LOCK BRAKE SYSTEM (ABS)"
+   },
+   {
+    "title": "АУДИОПЕРЕКЛЮЧАТЕЛЬ",
+    "pageLabel": "22-9",
+    "group": null,
+    "pdfPage": 710,
+    "titleEn": "AUDIO SWITCH"
+   },
+   {
+    "title": "АУДИОУСТРОЙСТВО",
+    "pageLabel": "22-6",
+    "group": null,
+    "pdfPage": 707,
+    "titleEn": "AUDIO UNIT"
+   },
+   {
+    "title": "СЕНСОР НАКЛОНА ДВИГАТЕЛЯ",
+    "pageLabel": "18-13",
+    "group": null,
+    "pdfPage": 582,
+    "titleEn": "BANK ANGLE SENSOR"
+   },
+   {
+    "title": "СЕНСОРЫ АТМОСФЕРНОГО ДАВЛЕНИЯ / РАЗРЫВНОЙ ДАВЛЕНИЯ",
+    "pageLabel": "5-67",
+    "group": null,
+    "pdfPage": 198,
+    "titleEn": "BARO/MAP SENSORS"
+   },
+   {
+    "title": "АКБ",
+    "pageLabel": "17-6",
+    "group": null,
+    "pdfPage": 555,
+    "titleEn": "BATTERY"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ АКБ / СИСТЕМЫ ЗАРЯДКИ",
+    "pageLabel": "1-10",
+    "group": null,
+    "pdfPage": 13,
+    "titleEn": "BATTERY/CHARGING SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "ПЕРЕД НАЧАЛОМ ДИАГНОСТИКИ НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "16-5",
+    "group": null,
+    "pdfPage": 522,
+    "titleEn": "BEFORE STARTING TROUBLESHOOTING"
+   },
+   {
+    "title": "ПЕРЕД ДИАГНОСТИКОЙ НЕИСПРАВНОСТЕЙ",
+    "pageLabel": "16-8",
+    "group": null,
+    "pdfPage": 525,
+    "titleEn": "BEFORE TROUBLESHOOTING"
+   },
+   {
+    "title": "РАСПОЛОЖЕНИЕ КОРПУСНЫХ ПАНЕЛЕЙ",
+    "pageLabel": "2-3",
+    "group": null,
+    "pdfPage": 78,
+    "titleEn": "BODY PANEL LOCATIONS"
+   },
+   {
+    "title": "ТОРМОЗНАЯ ЖИДКОСТЬ",
+    "pageLabel": "3-16",
+    "group": null,
+    "pdfPage": 113,
+    "titleEn": "BRAKE FLUID"
+   },
+   {
+    "title": "ЗАМЕНА ТОРМОЗНОЙ ЖИДКОСТИ / ПРОКАЧКА",
+    "pageLabel": "15-6",
+    "group": null,
+    "pdfPage": 483,
+    "titleEn": "BRAKE FLUID REPLACEMENT/AIR BLEEDING"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ТОРМОЗНОГО СВЕТА",
+    "pageLabel": "3-18",
+    "group": null,
+    "pdfPage": 115,
+    "titleEn": "BRAKE LIGHT SWITCH"
+   },
+   {
+    "title": "ИЗНОС ТОРМОЗНЫХ КОЛЫШКОВ",
+    "pageLabel": "3-17",
+    "group": null,
+    "pdfPage": 114,
+    "titleEn": "BRAKE PAD WEAR"
+   },
+   {
+    "title": "ТОРМОЗНЫЕ КОЛЫШКИ / ДИСК",
+    "pageLabel": "15-13",
+    "group": null,
+    "pdfPage": 490,
+    "titleEn": "BRAKE PAD/DISC"
+   },
+   {
+    "title": "СИСТЕМА СЕРВОДУХОВОГО УПРАВЛЕНИЯ ТОРМОЗАМИ (ANTI-DIVE)",
+    "pageLabel": "24-5",
+    "group": null,
+    "pdfPage": 741,
+    "titleEn": "BRAKE SERVO-PRESSURE SENSING ANTI-DIVE SYSTEM"
+   },
+   {
+    "title": "ТОРМОЗНЫЙ ПЕРЕКЛЮЧАТЕЛЬ",
+    "pageLabel": "20-37",
+    "group": null,
+    "pdfPage": 670,
+    "titleEn": "BRAKE SWITCH"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА",
+    "pageLabel": "3-18",
+    "group": null,
+    "pdfPage": 115,
+    "titleEn": "BRAKE SYSTEM"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ТОРМОЗНОЙ СИСТЕМЫ",
+    "pageLabel": "1-10",
+    "group": null,
+    "pdfPage": 13,
+    "titleEn": "BRAKE SYSTEM SPECIFICATIONS"
+   },
+   {
+    "title": "ПРОКЛАДКА ЖГУТОВ И СЕТЕЙ",
+    "pageLabel": "1-23",
+    "group": null,
+    "pdfPage": 26,
+    "titleEn": "CABLE & HARNESS ROUTING"
+   },
+   {
+    "title": "УСТАНОВКА ЦЕПИ ГАЗОРАЗПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-26",
+    "group": null,
+    "pdfPage": 275,
+    "titleEn": "CAM CHAIN INSTALLATION"
+   },
+   {
+    "title": "СЪЕМ ЦЕПИ ГАЗОРАЗПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-12",
+    "group": null,
+    "pdfPage": 261,
+    "titleEn": "CAM CHAIN REMOVAL"
+   },
+   {
+    "title": "СЕНСОР ПОЛАЖЕНИЯ ВАЛА РАСПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "5-67",
+    "group": null,
+    "pdfPage": 198,
+    "titleEn": "CAMSHAFT POSITION SENSOR"
+   },
+   {
+    "title": "УСТАНОВКА ВАЛА РАСПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-28",
+    "group": null,
+    "pdfPage": 277,
+    "titleEn": "CAMSHAFT INSTALLATION"
+   },
+   {
+    "title": "СЪЕМ ВАЛА РАСПРЕДЕЛЬЕНИЯ",
+    "pageLabel": "8-7",
+    "group": null,
+    "pdfPage": 256,
+    "titleEn": "CAMSHAFT REMOVAL"
+   },
+   {
+    "title": "ЗАМЕНА ПОДШИПНИКОВ КОРПУСА",
+    "pageLabel": "12-14",
+    "group": null,
+    "pdfPage": 385,
+    "titleEn": "CASE BEARING REPLACEMENT"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ СИСТЕМЫ ЗАРЯДКИ",
+    "pageLabel": "17-9",
+    "group": null,
+    "pdfPage": 558,
+    "titleEn": "CHARGING SYSTEM INSPECTION"
+   },
+   {
+    "title": "СЦЕПЛЕНИЕ",
+    "pageLabel": "9-14",
+    "group": null,
+    "pdfPage": 297,
+    "titleEn": "CLUTCH"
+   },
+   {
+    "title": "ЖИДКОСТЬ СЦЕПЛЕНИЯ",
+    "pageLabel": "3-19",
+    "group": null,
+    "pdfPage": 116,
+    "titleEn": "CLUTCH FLUID"
+   },
+   {
+    "title": "ЗАМЕНА ЖИДКОСТИ СЦЕПЛЕНИЯ / ПРОКАЧКА",
+    "pageLabel": "9-7",
+    "group": null,
+    "pdfPage": 290,
+    "titleEn": "CLUTCH FLUID REPLACEMENT/AIR BLEEDING"
+   },
+   {
+    "title": "ГЛАВНЫЙ ЦИЛИНДР СЦЕПЛЕНИЯ",
+    "pageLabel": "9-8",
+    "group": null,
+    "pdfPage": 291,
+    "titleEn": "CLUTCH MASTER CYLINDER"
+   },
+   {
+    "title": "ВТОРИЧНЫЙ ЦИЛИНДР СЦЕПЛЕНИЯ",
+    "pageLabel": "9-12",
+    "group": null,
+    "pdfPage": 295,
+    "titleEn": "CLUTCH SLAVE CYLINDER"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СЦЕПЛЕНИЯ",
+    "pageLabel": "1-7",
+    "group": null,
+    "pdfPage": 10,
+    "titleEn": "CLUTCH SPECIFICATIONS"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ СЦЕПЛЕНИЯ",
+    "pageLabel": "20-37",
+    "group": null,
+    "pdfPage": 670,
+    "titleEn": "CLUTCH SWITCH"
+   },
+   {
+    "title": "СИСТЕМА СЦЕПЛЕНИЯ",
+    "pageLabel": "3-19",
+    "group": null,
+    "pdfPage": 116,
+    "titleEn": "CLUTCH SYSTEM"
+   },
+   {
+    "title": "КОМБИНИРОВАННЫЙ ПРИБОР",
+    "pageLabel": "20-17",
+    "group": null,
+    "pdfPage": 650,
+    "titleEn": "COMBINATION METER"
+   },
+   {
+    "title": "СЦЕПЛЕНИЕ",
+    "pageLabel": "9-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 285,
+    "titleEn": "CLUTCH",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СИСТЕМА ОХЛАЖДЕНИЯ",
+    "pageLabel": "6-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 211,
+    "titleEn": "COOLING SYSTEM",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ГОЛОВКА ЦИЛИНДРА / ВАЛЬВЫ",
+    "pageLabel": "8-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 251,
+    "titleEn": "CYLINDER HEAD/VALVE",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ЦИЛИНДР / ПИСТОН / ВАЛ ВРАТ",
+    "pageLabel": "11-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 349,
+    "titleEn": "CYLINDER/PISTON/CRANKSHAFT",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СЪЕМ И УСТАНОВКА ДВИГАТЕЛЯ",
+    "pageLabel": "7-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 231,
+    "titleEn": "ENGINE REMOVAL/INSTALLATION",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ФИНАЛЬНАЯ ПЕРЕДАЧА",
+    "pageLabel": "12-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 373,
+    "titleEn": "FINAL DRIVE",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ПЕРЕДНИЕ КОЛЕСА / ПОДВЕСКА / УПРАВЛЕНИЕ",
+    "pageLabel": "13-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 397,
+    "titleEn": "FRONT WHEEL/SUSPENSION/STEERING",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+    "pageLabel": "5-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 133,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ПЕРЕДАЧ / ТРАНСМИССИЯ",
+    "pageLabel": "10-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 311,
+    "titleEn": "GEARSHIFT LINKAGE/TRANSMISSION",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ЗАДНИЕ КОЛЕСА / ПОДВЕСКА",
+    "pageLabel": "14-2",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 447,
+    "titleEn": "REAR WHEEL/SUSPENSION",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ЗАМЕНА ОХЛАЖДАЮЩЕЙ ЖИДКОСТИ",
+    "pageLabel": "6-6",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 215,
+    "titleEn": "COOLANT REPLACEMENT",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ПРИБОР ТЕМПЕРАТУРЫ ОХЛАЖДАЮЩЕЙ ЖИДКОСТИ / СЕНСОР ECT",
+    "pageLabel": "20-22",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 655,
+    "titleEn": "COOLANT TEMPERATURE GAUGE/ECT SENSOR",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СИСТЕМА ОХЛАЖДЕНИЯ",
+    "pageLabel": "3-14",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 111,
+    "titleEn": "COOLING SYSTEM",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ ОХЛАЖДЕНИЯ",
+    "pageLabel": "1-6",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 9,
+    "titleEn": "COOLING SYSTEM SPECIFICATIONS",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СБОЙКА КАРТЕРА",
+    "pageLabel": "11-22",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 369,
+    "titleEn": "CRANKCASE ASSEMBLY",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ПРИВОД ВЕНТИЛЯЦИИ КАРТЕРА",
+    "pageLabel": "3-7",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 104,
+    "titleEn": "CRANKCASE BREATHER",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ЗАМЕНА ПОДШИПНИКОВ КРЫШКИ КАРТЕРА",
+    "pageLabel": "10-19",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 328,
+    "titleEn": "CRANKCASE COVER BEARING REPLACEMENT",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "РАЗЪЕМ КАРТЕРА",
+    "pageLabel": "11-6",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 353,
+    "titleEn": "CRANKCASE SEPARATION",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ПОДШИПНИК ШАТУННОЙ ШЕЙКИ",
+    "pageLabel": "11-11",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 358,
+    "titleEn": "CRANKPIN BEARING",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "УСТАНОВКА ВАЛА ВРАТ",
+    "pageLabel": "11-16",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 363,
+    "titleEn": "CRANKSHAFT INSTALLATION",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СЪЕМ ВАЛА ВРАТ",
+    "pageLabel": "11-13",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 360,
+    "titleEn": "CRANKSHAFT REMOVAL",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "АКТУАТОР АВТОПИЛОТА",
+    "pageLabel": "21-16",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 699,
+    "titleEn": "CRUISE ACTUATOR",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ОТКЛЮЧЕНИЯ АВТОПИЛОТА",
+    "pageLabel": "21-14",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 697,
+    "titleEn": "CRUISE CANCEL SWITCH",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ АВТОПИЛОТА",
+    "pageLabel": "21-13",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 696,
+    "titleEn": "CRUISE CONTROL SWITCH",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ АВТОПИЛОТА",
+    "pageLabel": "1-11",
+    "group": "РАСПОЛОЖЕНИЕ ДЕТАЛЕЙ",
+    "pdfPage": 14,
+    "titleEn": "CRUISE CONTROL SYSTEM SPECIFICATIONS",
+    "groupEn": "COMPONENT LOCATION"
+   },
+   {
+    "title": "СИСТЕМА АВТОПИЛОТА",
+    "pageLabel": "21-9",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 692,
+    "titleEn": "CRUISE CONTROL SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМА СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "19-39",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 622,
+    "titleEn": "STARTER/REVERSE SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "КОМПРЕССИЯ ЦИЛИНДРА",
+    "pageLabel": "8-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 255,
+    "titleEn": "CYLINDER COMPRESSION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СБОЙКА ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-22",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 271,
+    "titleEn": "CYLINDER HEAD ASSEMBLY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УСТАНОВКА КРЫШКИ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-32",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 281,
+    "titleEn": "CYLINDER HEAD COVER INSTALLATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЪЕМ КРЫШКИ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 255,
+    "titleEn": "CYLINDER HEAD COVER REMOVAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ДЕМОНТАЖ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-16",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 265,
+    "titleEn": "CYLINDER HEAD DISASSEMBLY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УСТАНОВКА ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-24",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 273,
+    "titleEn": "CYLINDER HEAD INSTALLATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЪЕМ ГОЛОВКИ ЦИЛИНДРА",
+    "pageLabel": "8-14",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 263,
+    "titleEn": "CYLINDER HEAD REMOVAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ГОЛОВКИ ЦИЛИНДРА / ВАЛЬВОВ",
+    "pageLabel": "1-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 10,
+    "titleEn": "CYLINDER HEAD/VALVES SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ЦИЛИНДРА / ПИСТОНА / ВАЛА ВРАТ",
+    "pageLabel": "1-8",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 11,
+    "titleEn": "CYLINDER/PISTON/CRANKSHAFT SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ДУШКА ЗАДЕРЖКИ",
+    "pageLabel": "15-38",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 515,
+    "titleEn": "DELAY VALVE",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЭКМ (БЛОК УПРАВЛЕНИЯ ДВИГАТЕЛЕМ)",
+    "pageLabel": "5-71",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 202,
+    "titleEn": "ECM (ENGINE CONTROL MODULE)",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМА ЭЛЕКТРОННОЙ НАСТРОЙКИ ПРЕДНАПРЯЖЕНИЯ ПРУЖИНЫ ЗАДНЕЙ ПОДВЕСКИ",
+    "pageLabel": "24-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 742,
+    "titleEn": "ELECTRIC REAR SUSPENSION SPRING PRELOAD ADJUSTMENT SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ШИРЫДКИ ИНФОРМАЦИИ О КОНТРОЛЕ ВЫБРОСОВ",
+    "pageLabel": "1-72",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 75,
+    "titleEn": "EMISSION CONTROL INFORMATION LABELS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМЫ КОНТРОЛЯ ВЫБРОСОВ",
+    "pageLabel": "1-69",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 72,
+    "titleEn": "EMISSION CONTROL SYSTEMS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ХОЛОСТЯЙ ХОД ДВИГАТЕЛЯ",
+    "pageLabel": "5-88",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 219,
+    "titleEn": "ENGINE IDLE SPEED",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УСТАНОВКА ДВИГАТЕЛЯ",
+    "pageLabel": "7-11",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 240,
+    "titleEn": "ENGINE INSTALLATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "МОТОРНОЕ МАСЛО",
+    "pageLabel": "3-11",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 108,
+    "titleEn": "ENGINE OIL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ФИЛЬТР МОТОРНОГО МАСЛА",
+    "pageLabel": "3-12",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 109,
+    "titleEn": "ENGINE OIL FILTER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЪЕМ ДВИГАТЕЛЯ",
+    "pageLabel": "7-5",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 234,
+    "titleEn": "ENGINE REMOVAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "БОКОВАЯ КРЫШКА ДВИГАТЕЛЯ",
+    "pageLabel": "2-5",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 80,
+    "titleEn": "ENGINE SIDE COVER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМА КОНТРОЛЯ ВЫБРОСОВ ИСПАРЕНИЙ (EVAP)",
+    "pageLabel": "5-74",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 205,
+    "titleEn": "EVAPORATIVE EMISSION (EVAP) CONTROL SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМА КОНТРОЛЯ ВЫБРОСОВ ИСПАРЕНИЙ",
+    "pageLabel": "3-15",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 112,
+    "titleEn": "EVAPORATIVE EMISSION CONTROL SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ВЫХЛОПНАЯ СИСТЕМА",
+    "pageLabel": "2-18",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 93,
+    "titleEn": "EXHAUST SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ УПРАВЛЕНИЯ ВЕНТИЛЯТОРОМ",
+    "pageLabel": "20-41",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 674,
+    "titleEn": "FAN CONTROL RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СБОЙКА ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-17",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 388,
+    "titleEn": "FINAL DRIVE ASSEMBLY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ДЕМОНТАЖ / ИНСПЕКЦИЯ ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-9",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 380,
+    "titleEn": "FINAL DRIVE DISASSEMBLY/INSPECTION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УСТАНОВКА ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-22",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 393,
+    "titleEn": "FINAL DRIVE INSTALLATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "МОТОРНОЕ МАСЛО ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "3-15",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 112,
+    "titleEn": "FINAL DRIVE OIL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЪЕМ ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "12-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 378,
+    "titleEn": "FINAL DRIVE REMOVAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ФИНАЛЬНОЙ ПЕРЕДАЧЫ",
+    "pageLabel": "1-9",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 12,
+    "titleEn": "FINAL DRIVE SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ВИЛКА",
+    "pageLabel": "13-24",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 419,
+    "titleEn": "FORK",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ТОРМОЗНЫЙ КАЛИПЕР",
+    "pageLabel": "15-27",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 504,
+    "titleEn": "FRONT BRAKE CALIPER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ЭКРАН",
+    "pageLabel": "2-10",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 85,
+    "titleEn": "FRONT FAIRING",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "КРЫШКИ ПЕРЕДНЕГО КРЫЛА",
+    "pageLabel": "2-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 81,
+    "titleEn": "FRONT FENDER COVERS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "НИЖНИЙ ПЕРЕДНИЙ ЭКРАН",
+    "pageLabel": "2-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 81,
+    "titleEn": "FRONT LOWER FAIRING",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ГЛАВНЫЙ ЦИЛИНДР ТОРМОЗА",
+    "pageLabel": "15-15",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 492,
+    "titleEn": "FRONT MASTER CYLINDER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕДНЕЕ УКАЗАТЕЛЬНОЕ СВЕТЛО",
+    "pageLabel": "20-13",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 646,
+    "titleEn": "FRONT TURN SIGNAL LIGHT",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕДНЕЕ КОЛЕСО",
+    "pageLabel": "13-16",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 411,
+    "titleEn": "FRONT WHEEL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ПЕРЕДНЕГО КОЛЕСА / ПОДВЕСКИ / УПРАВЛЕНИЯ",
+    "pageLabel": "1-9",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 12,
+    "titleEn": "FRONT WHEEL/SUSPENSION/STEERING SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УКАЗАТЕЛЬ УРОВНЯ ТОПЛИВА / ИНДИКАТОР НИЗКОГО УРОВНЯ",
+    "pageLabel": "20-24",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 657,
+    "titleEn": "FUEL GAUGE/LOW FUEL INDICATOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ИНЖЕКТОРЫ ТОПЛИВА",
+    "pageLabel": "5-61",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 192,
+    "titleEn": "FUEL INJECTORS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ТОПЛИВНЫЙ ПРОВОД",
+    "pageLabel": "3-5",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 102,
+    "titleEn": "FUEL LINE",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ ТОПЛИВНОГО ПРОВОДА",
+    "pageLabel": "5-52",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 183,
+    "titleEn": "FUEL LINE INSPECTION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ТОПЛИВНЫЙ НАСОС",
+    "pageLabel": "5-54",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 185,
+    "titleEn": "FUEL PUMP",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ ТОПЛИВНОГО НАСОСА",
+    "pageLabel": "5-66",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 197,
+    "titleEn": "FUEL PUMP RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ ПИТАНИЯ (Программируемый впрыск)",
+    "pageLabel": "1-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 9,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection) SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "БАК ТОПЛИВА",
+    "pageLabel": "5-63",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 194,
+    "titleEn": "FUEL TANK",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ПОЛАЖЕНИЯ ПЕРЕДАЧ",
+    "pageLabel": "20-38",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 671,
+    "titleEn": "GEAR POSITION SWITCH",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "МЕХАНИЗМ ПЕРЕКЛЮЧЕНИЯ ПЕРЕДАЧ",
+    "pageLabel": "10-8",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 317,
+    "titleEn": "GEARSHIFT LINKAGE",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ПЕРЕКЛЮЧАТЕЛЯ ПЕРЕДАЧ / ТРАНСМИССИИ",
+    "pageLabel": "1-8",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 11,
+    "titleEn": "GEARSHIFT LINKAGE/TRANSMISSION SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РУЛЬ",
+    "pageLabel": "13-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 402,
+    "titleEn": "HANDLEBAR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ НА РУЛЕ",
+    "pageLabel": "20-35",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 668,
+    "titleEn": "HANDLEBAR SWITCH",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ АВАРИЙНОЙ СИГНАЛИЗАЦИИ",
+    "pageLabel": "20-32",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 665,
+    "titleEn": "HAZARD SWITCH",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕДНИЙ ОСВЕТИТЕЛЬ",
+    "pageLabel": "20-8",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 641,
+    "titleEn": "HEADLIGHT",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕГУЛИРОВКА ПЕРЕДНЕГО СВЕТА",
+    "pageLabel": "20-9",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 642,
+    "titleEn": "HEADLIGHT ADJUSTER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "НАСТРОЙКА ПЕРЕДНЕГО СВЕТА",
+    "pageLabel": "3-19",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 116,
+    "titleEn": "HEADLIGHT AIM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПРОВОД СОЕДИНЕНИЯ АУДИОНАБОРА",
+    "pageLabel": "22-12",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 713,
+    "titleEn": "HEADSET JUNCTION WIRE",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ГУДОК",
+    "pageLabel": "20-40",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 673,
+    "titleEn": "HORN",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ГИДРАВЛИЧЕСКОЕ УСИЛЕННОЕ СЦЕПЛЕНИЕ",
+    "pageLabel": "24-4",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 740,
+    "titleEn": "HYDRAULICALLY ASSISTED CLUTCH",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЕНСОР ТЕМПЕРАТУРЫ ВОЗДУХА НА ВХОДЕ",
+    "pageLabel": "5-68",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 199,
+    "titleEn": "IAT SENSOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ДУШКА УПРАВЛЕНИЯ ХОЛОСТОЙХОДНЫМ ВОЗДУХОМ (IAC)",
+    "pageLabel": "24-2",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 738,
+    "titleEn": "IDLE AIR CONTROL (IAC) VALVE",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "КАТУШКА ЗАЖИГАНИЯ",
+    "pageLabel": "18-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 576,
+    "titleEn": "IGNITION COIL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "КАТУШКА ЗАЖИГАНИЯ С ВНУТРЕННИМ ПОДСВЕЧНИКОМ",
+    "pageLabel": "24-12",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 748,
+    "titleEn": "IGNITION COIL WITH BUILT-IN IGNITER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ ЗАЖИГАНИЯ АВТОПИЛОТА",
+    "pageLabel": "21-11",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 694,
+    "titleEn": "IGNITION CRUISE RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ГЕНЕРАТОР ИМПУЛЬСОВ ЗАЖИГАНИЯ",
+    "pageLabel": "18-9",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 578,
+    "titleEn": "IGNITION PULSE GENERATOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ВЫКЛЮЧАТЕЛЬ ЗАЖИГАНИЯ",
+    "pageLabel": "20-34",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 667,
+    "titleEn": "IGNITION SWITCH",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ СИСТЕМЫ ЗАЖИГАНИЯ",
+    "pageLabel": "18-5",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 574,
+    "titleEn": "IGNITION SYSTEM INSPECTION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ ЗАЖИГАНИЯ",
+    "pageLabel": "1-11",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 14,
+    "titleEn": "IGNITION SYSTEM SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "НАСТРОЙКА ФАЗЫ ЗАЖИГАНИЯ",
+    "pageLabel": "18-14",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 583,
+    "titleEn": "IGNITION TIMING",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ВНУТРЕННИЙ ЭКРАН",
+    "pageLabel": "2-10",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 85,
+    "titleEn": "INNER FAIRING",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЕНСОР ДЕРГАНИЯ",
+    "pageLabel": "5-69",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 200,
+    "titleEn": "KNOCK SENSOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СВЕТИЛЬНИК НОМЕРНОЙ РЕГИСТРАЦИИ",
+    "pageLabel": "20-15",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 648,
+    "titleEn": "LICENSE LIGHT",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ ОСВЕТИТЕЛЕЙ / ПРИБОРОВ / ПЕРЕКЛЮЧАТЕЛЕЙ",
+    "pageLabel": "1-11",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 14,
+    "titleEn": "LIGHTS/METERS/SWITCHES SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ТОЧКИ СМАЗКИ И ЗАПЕЧАТЛЕНИЯ",
+    "pageLabel": "1-19",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 22,
+    "titleEn": "LUBRICATION & SEAL POINTS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ СМАЗКИ",
+    "pageLabel": "1-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 9,
+    "titleEn": "LUBRICATION SYSTEM SPECIFICATIONS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "КОРЕННЫЙ ПОДШИПНИК",
+    "pageLabel": "11-14",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 361,
+    "titleEn": "MAIN JOURNAL BEARING",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РАСПИСАНИЕ ОБСЛУЖИВАНИЯ",
+    "pageLabel": "3-4",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 101,
+    "titleEn": "MAINTENANCE SCHEDULE",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПАНЕЛЬ ПРИБОРОВ",
+    "pageLabel": "2-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 82,
+    "titleEn": "METER PANEL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ОПРЕДЕЛЕНИЕ МОДЕЛИ",
+    "pageLabel": "1-2",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 5,
+    "titleEn": "MODEL IDENTIFICATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ МНОГОИНДИКАТОРНОГО ЭКРАНА",
+    "pageLabel": "20-40",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 673,
+    "titleEn": "MULTI-DISPLAY CONTROL SWITCH",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ИНДИКАТОР НУЛЁВОЙ ПЕРЕДАЧИ",
+    "pageLabel": "20-26",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 659,
+    "titleEn": "NEUTRAL INDICATOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ГАЙКИ, БОЛТЫ, КРЕПЕЖ",
+    "pageLabel": "3-21",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 118,
+    "titleEn": "NUTS, BOLTS, FASTENERS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЕНСОР КИСЛОРОДА (O2)",
+    "pageLabel": "5-69",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 200,
+    "titleEn": "O2 SENSOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПРОВЕРКА МАСЛЯНОГО ДАВЛЕНИЯ",
+    "pageLabel": "4-5",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 124,
+    "titleEn": "OIL PRESSURE CHECK",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ИНДИКАТОР МАСЛЯНОГО ДАВЛЕНИЯ",
+    "pageLabel": "20-27",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 660,
+    "titleEn": "OIL PRESSURE INDICATOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "МАСЛЯНЫЙ НАСОС",
+    "pageLabel": "4-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 126,
+    "titleEn": "OIL PUMP",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "МАСЛЯНАЯ СЕТКА / ДУШКА СНЯТИЯ ДАВЛЕНИЯ",
+    "pageLabel": "4-6",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 125,
+    "titleEn": "OIL STRAINER/PRESSURE RELIEF VALVE",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЕНСОР ТЕМПЕРАТУРЫ ВНЕШНЕГО ВОЗДУХА",
+    "pageLabel": "20-33",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 666,
+    "titleEn": "OPEN AIR TEMPERATURE SENSOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМА PGM-FI (Программируемый впрыск топлива)",
+    "pageLabel": "5-8",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 139,
+    "titleEn": "PGM-FI (PROGRAMMED FUEL INJECTION) SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ ЗАЖИГАНИЯ PGM-FI",
+    "pageLabel": "18-11",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 580,
+    "titleEn": "PGM-FI IGNITION RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "КОДЫ НЕИСПРАВНОСТЕЙ ИНДИКАТОРА САМОДИАГНОСТИКИ PGM-FI",
+    "pageLabel": "5-13",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 144,
+    "titleEn": "PGM-FI SELF-DIAGNOSIS MALFUNCTION INDICATOR FAILURE CODES",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ PGM-FI",
+    "pageLabel": "5-16",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 147,
+    "titleEn": "PGM-FI TROUBLESHOOTING",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УСТАНОВКА ПИСТОНА / ШАТУНА",
+    "pageLabel": "11-17",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 364,
+    "titleEn": "PISTON/CONNECTING ROD INSTALLATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЪЕМ ПИСТОНА / ШАТУНА",
+    "pageLabel": "11-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 354,
+    "titleEn": "PISTON/CONNECTING ROD REMOVAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ ОСВЕТИТЕЛЯ ПОЛАЖЕНИЯ",
+    "pageLabel": "20-31",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 664,
+    "titleEn": "POSITION LIGHT RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ КОНТРОЛЯ ПИТАНИЯ",
+    "pageLabel": "19-31",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 614,
+    "titleEn": "POWER CONTROL RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМА ЭЛЕКТРОУПРАВЛЕНИЯ ЗАМКОМ КОЛОКУ",
+    "pageLabel": "20-42",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 675,
+    "titleEn": "POWER TRUNK LOCK SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УСТАНОВКА ПЕРВИЧНЫХ ЗЁМОВ / ВАЛА ВЫХОДА",
+    "pageLabel": "10-20",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 329,
+    "titleEn": "PRIMARY GEARS/OUTPUT SHAFT INSTALLATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЪЕМ ПЕРВИЧНЫХ ЗЁМОВ / ВАЛА ВЫХОДА",
+    "pageLabel": "10-13",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 322,
+    "titleEn": "PRIMARY GEARS/OUTPUT SHAFT REMOVAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПРОПОРЦИОНАЛЬНАЯ ДУШКА УПРАВЛЕНИЯ (PCV)",
+    "pageLabel": "15-39",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 516,
+    "titleEn": "PROPORTIONAL CONTROL VALVE (PCV)",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "АНТИФРИЗ",
+    "pageLabel": "3-13",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 110,
+    "titleEn": "RADIATOR COOLANT",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РАДИАТОР / ВЕНТИЛЯТОР ОХЛАЖДЕНИЯ",
+    "pageLabel": "6-8",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 217,
+    "titleEn": "RADIATOR/COOLING FAN",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЗАДНИЙ ТОРМОЗНЫЙ КАЛИПЕР",
+    "pageLabel": "15-34",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 511,
+    "titleEn": "REAR BRAKE CALIPER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "УСТАНОВКА ЗАДНЕЙ КРЫШКИ КАРТЕРА",
+    "pageLabel": "10-24",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 333,
+    "titleEn": "REAR CRANKCASE COVER INSTALLATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЪЕМ ЗАДНЕЙ КРЫШКИ КАРТЕРА",
+    "pageLabel": "10-11",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 320,
+    "titleEn": "REAR CRANKCASE COVER REMOVAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЗАДНЕЕ КРЫЛО A",
+    "pageLabel": "2-13",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 88,
+    "titleEn": "REAR FENDER A",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЗАДНЕЕ КРЫЛО B",
+    "pageLabel": "2-16",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 91,
+    "titleEn": "REAR FENDER B",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЗАДНИЙ ГЛАВНЫЙ ЦИЛИНДР ТОРМОЗА / ТОРМОЗНАЯ ПОДНОЖКА",
+    "pageLabel": "15-19",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 496,
+    "titleEn": "REAR MASTER CYLINDER/BRAKE PEDAL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЗАДНЕЕ КОЛЕСО",
+    "pageLabel": "14-14",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 459,
+    "titleEn": "REAR WHEEL",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЗЕРКАЛО ЗАДНЕГО ВИДА",
+    "pageLabel": "2-7",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 82,
+    "titleEn": "REARVIEW MIRROR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "БЛОК РЕЛЕ",
+    "pageLabel": "20-16",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 649,
+    "titleEn": "RELAY BOX",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ЭКСПЛУАТАЦИЯ РЕВЕРСА",
+    "pageLabel": "3-20",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 117,
+    "titleEn": "REVERSE OPERATION",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СБОРКА РЕГУЛЯТОРА РЕВЕРСА",
+    "pageLabel": "19-28",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 611,
+    "titleEn": "REVERSE REGULATOR ASSEMBLY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ РЕВЕРСА",
+    "pageLabel": "19-26",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 609,
+    "titleEn": "REVERSE RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СБОРКА РЕЗИСТОРА РЕВЕРСА",
+    "pageLabel": "19-30",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 613,
+    "titleEn": "REVERSE RESISTOR ASSEMBLY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "АКТУАТОР ВКЛЮЧЕНИЯ РЕВЕРСА",
+    "pageLabel": "19-36",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 619,
+    "titleEn": "REVERSE SHIFT ACTUATOR",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "МЕХАНИЗМ ВКЛЮЧЕНИЯ РЕВЕРСА",
+    "pageLabel": "19-42",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 625,
+    "titleEn": "REVERSE SHIFT MECHANISM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "РЕЛЕ ВКЛЮЧЕНИЯ РЕВЕРСА",
+    "pageLabel": "19-34",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 617,
+    "titleEn": "REVERSE SHIFT RELAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ РЕВЕРСА",
+    "pageLabel": "19-27",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 610,
+    "titleEn": "REVERSE SWITCH",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "КОМБИНИРОВАННЫЙ СВЕТИЛЬНИК СУМКИ ЗА СЕДЛОМ",
+    "pageLabel": "20-14",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 647,
+    "titleEn": "SADDLEBAG COMBINATION LIGHT",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СТОЙКИ СУМКИ / КОЛОКУ",
+    "pageLabel": "2-17",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 92,
+    "titleEn": "SADDLEBAG/TRUNK STAY",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СУМКИ ЗА СЕДЛОМ",
+    "pageLabel": "2-15",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 90,
+    "titleEn": "SADDLEBAGS",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СЕДЛО",
+    "pageLabel": "2-5",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 80,
+    "titleEn": "SEAT",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "СИСТЕМА ДОПОЛНИТЕЛЬНОЙ ПОДАЧИ ВОЗДУХА",
+    "pageLabel": "3-14",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 111,
+    "titleEn": "SECONDARY AIR SUPPLY SYSTEM",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "ВТОРИЧНЫЙ ГЛАВНЫЙ ЦИЛИНДР ТОРМОЗА",
+    "pageLabel": "15-24",
+    "group": "БЛОК УПРАВЛЕНИЯ АВТОПИЛОТОМ / РЕВЕРСОМ",
+    "pdfPage": 501,
+    "titleEn": "SECONDARY MASTER CYLINDER",
+    "groupEn": "CRUISE/REVERSE CONTROL MODULE"
+   },
+   {
+    "title": "АУДИОСИСТЕМА",
+    "pageLabel": "22-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 704,
+    "titleEn": "AUDIO SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "АКБ / СИСТЕМА ЗАРЯДКИ",
+    "pageLabel": "17-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 552,
+    "titleEn": "BATTERY/CHARGING SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА (ABS)",
+    "pageLabel": "16-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 520,
+    "titleEn": "BRAKE SYSTEM (ABS)",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА (Стандарт)",
+    "pageLabel": "15-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 480,
+    "titleEn": "BRAKE SYSTEM (Standard)",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СЦЕПЛЕНИЕ",
+    "pageLabel": "9-4",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 287,
+    "titleEn": "CLUTCH",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СИСТЕМА ОХЛАЖДЕНИЯ",
+    "pageLabel": "6-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 212,
+    "titleEn": "COOLING SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СИСТЕМА АВТОПИЛОТА",
+    "pageLabel": "21-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 686,
+    "titleEn": "CRUISE CONTROL SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ГОЛОВКА ЦИЛИНДРА / ВАЛЬВЫ",
+    "pageLabel": "8-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 252,
+    "titleEn": "CYLINDER HEAD/VALVE",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ЦИЛИНДР / ПИСТОН / ВАЛ ВРАТ",
+    "pageLabel": "11-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 350,
+    "titleEn": "CYLINDER/PISTON/CRANKSHAFT",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СЪЕМ И УСТАНОВКА ДВИГАТЕЛЯ",
+    "pageLabel": "7-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 232,
+    "titleEn": "ENGINE REMOVAL/INSTALLATION",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ФИНАЛЬНАЯ ПЕРЕДАЧА",
+    "pageLabel": "12-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 374,
+    "titleEn": "FINAL DRIVE",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "РАМА / КОРПУСНЫЕ ПАНЕЛИ / ВЫХЛОПНАЯ СИСТЕМА",
+    "pageLabel": "2-2",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 77,
+    "titleEn": "FRAME/BODY PANELS/EXHAUST SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПЕРЕДНИЕ КОЛЕСА / ПОДВЕСКА / УПРАВЛЕНИЕ",
+    "pageLabel": "13-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 398,
+    "titleEn": "FRONT WHEEL/SUSPENSION/STEERING",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+    "pageLabel": "5-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 134,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ПЕРЕДАЧ / ТРАНСМИССИЯ",
+    "pageLabel": "10-4",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 313,
+    "titleEn": "GEARSHIFT LINKAGE/TRANSMISSION",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СИСТЕМА ЗАЖИГАНИЯ",
+    "pageLabel": "18-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 572,
+    "titleEn": "IGNITION SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ОСВЕТИТЕЛИ / ПРИБОРЫ / ПЕРЕКЛЮЧАТЕЛИ",
+    "pageLabel": "20-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 636,
+    "titleEn": "LIGHTS/METERS/SWITCHES",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СИСТЕМА СМАЗКИ",
+    "pageLabel": "4-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 122,
+    "titleEn": "LUBRICATION SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ",
+    "pageLabel": "3-2",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 99,
+    "titleEn": "MAINTENANCE",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ЗАДНИЕ КОЛЕСА / ПОДВЕСКА",
+    "pageLabel": "14-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 448,
+    "titleEn": "REAR WHEEL/SUSPENSION",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СИСТЕМА СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "19-4",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 587,
+    "titleEn": "STARTER/REVERSE SYSTEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pageLabel": "23-3",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 716,
+    "titleEn": "WIRING DIAGRAM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПРАВИЛА ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ",
+    "pageLabel": "1-2",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 5,
+    "titleEn": "SERVICE RULES",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "АМОРТИЗАТОР",
+    "pageLabel": "14-16",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 461,
+    "titleEn": "SHOCK ABSORBER",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "БОКОВАЯ КРЫШКА",
+    "pageLabel": "2-5",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 80,
+    "titleEn": "SIDE COVER",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "БОКОВАЯ ПОДСТАВКА",
+    "pageLabel": "3-20",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 117,
+    "titleEn": "SIDE STAND",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ БОКОВОЙ ПОДСТАВКИ",
+    "pageLabel": "20-39",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 672,
+    "titleEn": "SIDE STAND SWITCH",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СВЕЧА ЗАЖИГАНИЯ",
+    "pageLabel": "3-8",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 105,
+    "titleEn": "SPARK PLUG",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ГРОМКОГОВОРКА",
+    "pageLabel": "22-12",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 713,
+    "titleEn": "SPEAKER",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ",
+    "pageLabel": "1-4",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 7,
+    "titleEn": "SPECIFICATIONS",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "РЕЛЕ ОГРАНИЧЕНИЯ СКОРОСТИ",
+    "pageLabel": "19-33",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 616,
+    "titleEn": "SPEED LIMITER RELAY",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СПЕДОМЕТР",
+    "pageLabel": "20-20",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 653,
+    "titleEn": "SPEEDOMETER",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ РЕЛЕ СТАРТЕРА A",
+    "pageLabel": "19-24",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 607,
+    "titleEn": "STARTER RELAY SWITCH A",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ РЕЛЕ СТАРТЕРА B",
+    "pageLabel": "19-25",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 608,
+    "titleEn": "STARTER RELAY SWITCH B",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "МОТОР СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "19-17",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 600,
+    "titleEn": "STARTER/REVERSE MOTOR",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СПЕЦИФИКАЦИИ СИСТЕМЫ СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "1-11",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 14,
+    "titleEn": "STARTER/REVERSE SYSTEM SPECIFICATIONS",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПОДШИПНИКИ ВАЛА УПРАВЛЕНИЯ",
+    "pageLabel": "3-22",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 119,
+    "titleEn": "STEERING HEAD BEARINGS",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ВАЛ УПРАВЛЕНИЯ",
+    "pageLabel": "13-41",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 436,
+    "titleEn": "STEERING STEM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "ПОДВЕСКА",
+    "pageLabel": "3-21",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 118,
+    "titleEn": "SUSPENSION",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "РЕЛЕ КОНТРОЛЯ ВЫСОТЫ ПОДВЕСКИ",
+    "pageLabel": "14-29",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 474,
+    "titleEn": "SUSPENSION LEVEL RELAY",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "СВЯЗЬ ПОДВЕСКИ",
+    "pageLabel": "14-18",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 463,
+    "titleEn": "SUSPENSION LINKAGE",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "МАХОВИК",
+    "pageLabel": "14-22",
+    "group": "СВЕДЕНИЯ О ТЕХНИЧЕСКОМ ОБСЛУЖИВАНИИ",
+    "pdfPage": 467,
+    "titleEn": "SWINGARM",
+    "groupEn": "SERVICE INFORMATION"
+   },
+   {
+    "title": "АКБ / СИСТЕМА ЗАРЯДКИ",
+    "pageLabel": "17-2",
+    "group": "СХЕМА СИСТЕМЫ",
+    "pdfPage": 551,
+    "titleEn": "BATTERY/CHARGING SYSTEM",
+    "groupEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+    "pageLabel": "5-7",
+    "group": "СХЕМА СИСТЕМЫ",
+    "pdfPage": 138,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)",
+    "groupEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА ЗАЖИГАНИЯ",
+    "pageLabel": "18-2",
+    "group": "СХЕМА СИСТЕМЫ",
+    "pdfPage": 571,
+    "titleEn": "IGNITION SYSTEM",
+    "groupEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СМАЗКА",
+    "pageLabel": "4-2",
+    "group": "СХЕМА СИСТЕМЫ",
+    "pdfPage": 121,
+    "titleEn": "LUBRICATION",
+    "groupEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА РЕВЕРСА",
+    "pageLabel": "19-3",
+    "group": "СХЕМА СИСТЕМЫ",
+    "pdfPage": 586,
+    "titleEn": "REVERSE SYSTEM",
+    "groupEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА СТАРТЕРА",
+    "pageLabel": "19-2",
+    "group": "СХЕМА СИСТЕМЫ",
+    "pdfPage": 585,
+    "titleEn": "STARTER SYSTEM",
+    "groupEn": "SYSTEM DIAGRAM"
+   },
+   {
+    "title": "АУДИОСИСТЕМА",
+    "pageLabel": "22-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 703,
+    "titleEn": "AUDIO SYSTEM",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "АКБ / СИСТЕМА ЗАРЯДКИ",
+    "pageLabel": "17-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 551,
+    "titleEn": "BATTERY/CHARGING SYSTEM",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА (ABS)",
+    "pageLabel": "16-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 519,
+    "titleEn": "BRAKE SYSTEM (ABS)",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА (Стандарт)",
+    "pageLabel": "15-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 479,
+    "titleEn": "BRAKE SYSTEM (Standard)",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СИСТЕМА АВТОПИЛОТА",
+    "pageLabel": "21-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 685,
+    "titleEn": "CRUISE CONTROL SYSTEM",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+    "pageLabel": "5-6",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 137,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СИСТЕМА ЗАЖИГАНИЯ",
+    "pageLabel": "18-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 571,
+    "titleEn": "IGNITION SYSTEM",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ОСВЕТИТЕЛИ / ПРИБОРЫ / ПЕРЕКЛЮЧАТЕЛИ",
+    "pageLabel": "20-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 635,
+    "titleEn": "LIGHTS/METERS/SWITCHES",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СИСТЕМА СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "19-2",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 585,
+    "titleEn": "STARTER/REVERSE SYSTEM",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ТЕСТЫ СИСТЕМЫ",
+    "pageLabel": "6-5",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 214,
+    "titleEn": "SYSTEM TESTING",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "СОЕДИНЕНИЯ ЖГУТОВ / РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pageLabel": "16-4",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 521,
+    "titleEn": "SYSTEM WIRING CONNECTIONS/LOCATIONS",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ТАХОМЕТР",
+    "pageLabel": "20-21",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 654,
+    "titleEn": "TACHOMETER",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ДРОССЕЛЬНАЯ ЗАСЛОНКА",
+    "pageLabel": "5-58",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 189,
+    "titleEn": "THROTTLE BODY",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ЭКСПЛУАТАЦИЯ ДРОССЕЛЯ",
+    "pageLabel": "3-5",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 102,
+    "titleEn": "THROTTLE OPERATION",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ВЕРХНИЙ ВЕТРОВОЙ ЭКРАН",
+    "pageLabel": "2-11",
+    "group": "РАСПОЛОЖЕНИЕ СИСТЕМЫ",
+    "pdfPage": 86,
+    "titleEn": "TOP SHELTER",
+    "groupEn": "SYSTEM LOCATION"
+   },
+   {
+    "title": "ДВИГАТЕЛЬ И РАМА",
+    "pageLabel": "1-12",
+    "group": "ВЕЛИЧИНЫ КРУПЛЕННЫХ МОМЕНТОВ",
+    "pdfPage": 15,
+    "titleEn": "ENGINE & FRAME",
+    "groupEn": "TORQUE VALUES"
+   },
+   {
+    "title": "СТАНДАРТНЫЕ",
+    "pageLabel": "1-12",
+    "group": "ВЕЛИЧИНЫ КРУПЛЕННЫХ МОМЕНТОВ",
+    "pdfPage": 15,
+    "titleEn": "STANDARD",
+    "groupEn": "TORQUE VALUES"
+   },
+   {
+    "title": "СБОЙКА ТРАНСМИССИИ",
+    "pageLabel": "10-33",
+    "group": "ВЕЛИЧИНЫ КРУПЛЕННЫХ МОМЕНТОВ",
+    "pdfPage": 342,
+    "titleEn": "TRANSMISSION ASSEMBLY",
+    "groupEn": "TORQUE VALUES"
+   },
+   {
+    "title": "ДЕМОНТАЖ ТРАНСМИССИИ",
+    "pageLabel": "10-26",
+    "group": "ВЕЛИЧИНЫ КРУПЛЕННЫХ МОМЕНТОВ",
+    "pdfPage": 335,
+    "titleEn": "TRANSMISSION DISASSEMBLY",
+    "groupEn": "TORQUE VALUES"
+   },
+   {
+    "title": "ДВИГАТЕЛЬ НЕ РАБОТАЕТ ИЛИ НЕ ЗАПУСКАЕТСЯ",
+    "pageLabel": "25-2",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 750,
+    "titleEn": "ENGINE DOES NOT START OR IS HARD TO START",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ДВИГАТЕЛЬ ЛИШЁН МОЩНОСТИ",
+    "pageLabel": "25-3",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 751,
+    "titleEn": "ENGINE LACKS POWER",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ПЛОХОЕ УПРАВЛЕНИЕ",
+    "pageLabel": "25-6",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 754,
+    "titleEn": "POOR HANDLING",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ПЛОХАЯ ДИНАМИКА НА ВЫСОКОЙ СКОРОСТИ",
+    "pageLabel": "25-6",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 754,
+    "titleEn": "POOR PERFORMANCE AT HIGH SPEED",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ПЛОХАЯ ДИНАМИКА НА НИЗКИХ СКОРОСТЯХ И ХОЛОСТОМ ХОДЕ",
+    "pageLabel": "25-5",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 753,
+    "titleEn": "POOR PERFORMANCE AT LOW AND IDLE SPEED",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, КОНКРЕТНАЯ",
+    "pageLabel": "16-8",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 525,
+    "titleEn": "TROUBLESHOOTING, SPECIFIC",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "АУДИОСИСТЕМА",
+    "pageLabel": "22-4",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 705,
+    "titleEn": "AUDIO SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "АКБ / СИСТЕМА ЗАРЯДКИ",
+    "pageLabel": "17-5",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 554,
+    "titleEn": "BATTERY/CHARGING SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА (ABS)",
+    "pageLabel": "16-10",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 527,
+    "titleEn": "BRAKE SYSTEM (ABS)",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ТОРМОЗНАЯ СИСТЕМА (Стандарт)",
+    "pageLabel": "15-5",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 482,
+    "titleEn": "BRAKE SYSTEM (Standard)",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СЦЕПЛЕНИЕ",
+    "pageLabel": "9-6",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 289,
+    "titleEn": "CLUTCH",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СИСТЕМА ОХЛАЖДЕНИЯ",
+    "pageLabel": "6-4",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 213,
+    "titleEn": "COOLING SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СИСТЕМА АВТОПИЛОТА",
+    "pageLabel": "21-4",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 687,
+    "titleEn": "CRUISE CONTROL SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ГОЛОВКА ЦИЛИНДРА / ВАЛЬВЫ",
+    "pageLabel": "8-5",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 254,
+    "titleEn": "CYLINDER HEAD/VALVE",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ЦИЛИНДР / ПИСТОН / ВАЛ ВРАТ",
+    "pageLabel": "11-5",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 352,
+    "titleEn": "CYLINDER/PISTON/CRANKSHAFT",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ФИНАЛЬНАЯ ПЕРЕДАЧА",
+    "pageLabel": "12-6",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 377,
+    "titleEn": "FINAL DRIVE",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "РАМА / КОРПУСНЫЕ ПАНЕЛИ / ВЫХЛОПНАЯ СИСТЕМА",
+    "pageLabel": "2-2",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 77,
+    "titleEn": "FRAME/BODY PANELS/EXHAUST SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ПЕРЕДНИЕ КОЛЕСА / ПОДВЕСКА / УПРАВЛЕНИЕ",
+    "pageLabel": "13-6",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 401,
+    "titleEn": "FRONT WHEEL/SUSPENSION/STEERING",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+    "pageLabel": "5-5",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 136,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ПЕРЕКЛЮЧАТЕЛЬ ПЕРЕДАЧ / ТРАНСМИССИЯ",
+    "pageLabel": "10-7",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 316,
+    "titleEn": "GEARSHIFT LINKAGE/TRANSMISSION",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СИСТЕМА ЗАЖИГАНИЯ",
+    "pageLabel": "18-4",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 573,
+    "titleEn": "IGNITION SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ОСВЕТИТЕЛИ / ПРИБОРЫ / ПЕРЕКЛЮЧАТЕЛИ",
+    "pageLabel": "20-4",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 637,
+    "titleEn": "LIGHTS/METERS/SWITCHES",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СИСТЕМА СМАЗКИ",
+    "pageLabel": "4-4",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 123,
+    "titleEn": "LUBRICATION SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ЗАДНИЕ КОЛЕСА / ПОДВЕСКА",
+    "pageLabel": "14-5",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 450,
+    "titleEn": "REAR WHEEL/SUSPENSION",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СИСТЕМА СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "19-6",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 589,
+    "titleEn": "STARTER/REVERSE SYSTEM",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "КОЛОК",
+    "pageLabel": "2-13",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 88,
+    "titleEn": "TRUNK",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ТОРМОЗНЫЙ СВЕТ / ЗАДНЕЕ СТОПОВОЕ СВЕТИЛЬНИК КОЛОКУ",
+    "pageLabel": "20-15",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 648,
+    "titleEn": "TRUNK BRAKE/TAILLIGHT",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "НИЖНЯЯ КРЫШКА КОЛОКУ",
+    "pageLabel": "2-13",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 88,
+    "titleEn": "TRUNK LOWER COVER",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "БЛОК ОТКЛЮЧЕНИЯ УКАЗАТЕЛЬНОГО СВЕТА",
+    "pageLabel": "20-28",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 661,
+    "titleEn": "TURN SIGNAL CANCEL UNIT",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "РЕЛЕ УКАЗАТЕЛЬНОГО СВЕТА",
+    "pageLabel": "20-27",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 660,
+    "titleEn": "TURN SIGNAL RELAY",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ЗАЗОРЫ КЛАПАНОВ",
+    "pageLabel": "3-9",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 106,
+    "titleEn": "VALVE CLEARANCE",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ЗАМЕНА НАПРАВЛЯЮЩЕЙ КЛАПАНА",
+    "pageLabel": "8-19",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 268,
+    "titleEn": "VALVE GUIDE REPLACEMENT",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ИНСПЕКЦИЯ / ВОССТАНОВЛЕНИЕ СИДЕНЬЯ КЛАПАНА",
+    "pageLabel": "8-19",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 268,
+    "titleEn": "VALVE SEAT INSPECTION/REFACING",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СЕНСОР СКОРОСТИ АВТОМОБИЛЯ",
+    "pageLabel": "5-81",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 212,
+    "titleEn": "VEHICLE SPEED SENSOR",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "НАСОС ОХЛАЖДАЮЩЕЙ ЖИДКОСТИ / ТЕРМОСТАТ",
+    "pageLabel": "6-17",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 226,
+    "titleEn": "WATER PUMP/THERMOSTAT",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "СЕНСОР СКОРОСТИ КОЛЕСА",
+    "pageLabel": "16-29",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 546,
+    "titleEn": "WHEEL SPEED SENSOR",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "КОЛЕСА / ШИНЫ",
+    "pageLabel": "3-22",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 119,
+    "titleEn": "WHEELS/TIRES",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "ВЕТРОВОЙ ЭКРАН",
+    "pageLabel": "2-8",
+    "group": "ДИАГНОСТИКА НЕИСПРАВНОСТЕЙ, ОБЩАЯ",
+    "pdfPage": 83,
+    "titleEn": "WINDSHIELD",
+    "groupEn": "TROUBLESHOOTING, GENERAL"
+   },
+   {
+    "title": "АБС",
+    "pageLabel": "23-7",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 720,
+    "titleEn": "ABS",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА УПРАВЛЕНИЯ ЗАМКОМ КОЛОКУ (ACC/TRUNK)",
+    "pageLabel": "23-17",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 730,
+    "titleEn": "ACC/TRUNK LOCK CONTROL SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "АУДИОСИСТЕМА",
+    "pageLabel": "23-22",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 735,
+    "titleEn": "AUDIO SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "КОМБИНИРОВАННЫЙ ПРИБОР",
+    "pageLabel": "23-15",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 728,
+    "titleEn": "COMBINATION METER",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА ОХЛАЖДЕНИЯ / ЗАРЯДКИ / ЗАЖИГАНИЯ",
+    "pageLabel": "23-11",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 724,
+    "titleEn": "COOLING/CHARGING/IGNITION SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА АВТОПИЛОТА",
+    "pageLabel": "23-20",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 733,
+    "titleEn": "CRUISE CONTROL SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА ПИТАНИЯ (Программируемый впрыск топлива)",
+    "pageLabel": "23-9",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 722,
+    "titleEn": "FUEL SYSTEM (Programmed Fuel Injection)",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "БЛОК ПРЕДОХРАНИТЕЛЕЙ",
+    "pageLabel": "23-3",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 716,
+    "titleEn": "FUSE BOX",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА ОСВЕЩЕНИЯ",
+    "pageLabel": "23-13",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 726,
+    "titleEn": "LIGHTING SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА СТАРТЕРА / РЕВЕРСА",
+    "pageLabel": "23-12",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 725,
+    "titleEn": "STARTER/REVERSE SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА КОНТРОЛЯ ВЫСОТЫ ПОДВЕСКИ",
+    "pageLabel": "23-5",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 718,
+    "titleEn": "SUSPENSION LEVEL CONTROL SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "СИСТЕМА КОНТРОЛЯ ВЫСОТЫ ПОДВЕСКИ",
+    "pageLabel": "23-5",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 718,
+    "titleEn": "SUSPENSION LEVEL CONTROL SYSTEM",
+    "groupEn": "WIRING DIAGRAM"
+   },
+   {
+    "title": "УКАЗАТЕЛЬНЫЕ СВЕТА / ГУДОК",
+    "pageLabel": "23-14",
+    "group": "ЭЛЕКТРООБОЖДАНИЕ (СХЕМЫ СОЕДИНЕНИЙ)",
+    "pdfPage": 727,
+    "titleEn": "TURN SIGNAL LIGHTS/HORN",
+    "groupEn": "WIRING DIAGRAM"
+   }
+  ],
+  "titleEn": "INDEX"
+ }
+]
