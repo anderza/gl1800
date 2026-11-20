@@ -60,6 +60,9 @@ jobs:
           npx cap add android
           npx cap sync android
 
+      - name: Install image generator dependency
+        run: python3 -m pip install --user Pillow
+
       - name: Apply black and gold Gold Wing app icon
         run: |
           python3 - <<'PY'
