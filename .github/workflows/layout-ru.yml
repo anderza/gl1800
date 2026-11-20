@@ -22,6 +22,15 @@ jobs:
         run: python scripts/test_layout_localization.py
       - name: Extract precise text coordinates from original GL1800 manual
         run: python scripts/extract_layout_spans.py www/manual.pdf layout/source_positions_template.json
+      - name: Build precise Russian table and figure pilot
+        run: python scripts/build_layout_pilot.py www/manual.pdf layout/pilot_translations_3_7.json layout/pilot-output
+      - name: Export pilot PDF, screenshots and QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: GL1800-RU-precise-layout-pilot
+          path: layout/pilot-output/
+          retention-days: 30
       - name: Publish page-by-page position template (not a completed translation)
         uses: actions/upload-artifact@v4
         with:
