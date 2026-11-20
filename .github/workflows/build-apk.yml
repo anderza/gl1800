@@ -1,119 +1,118 @@
-name: Preview and Build APK
+name: Preview and build APK
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch: # Ручной запуск кнопкой Run workflow
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # для публикации APK в Releases
+  pages: write
+  id-token: write
+
+concurrency:
+  group: build-apk
+  cancel-in-progress: true
 
 jobs:
-  # ---------- Задача 1: превью (веб-версия) ----------
+  # ШАГ 1. Превью: веб-версия приложения на GitHub Pages
   preview:
-    name: Build Preview
-    runs-on: ubuntu-24.04
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+    runs-on: ubuntu-latest
+    continue-on-error: true   # если Pages не включены, сборка APK всё равно пойдёт
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
-
-      - name: Upload web version
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: 'www'
-
-      - name: Deploy to GitHub Pages
-        continue-on-error: true # Если Pages не включён — не страшно, APK соберётся отдельно
+          path: www
+      - id: deploy
         uses: actions/deploy-pages@v4
 
-  # ---------- Задача 2: сборка Android APK (не зависит от превью) ----------
+  # ШАГ 2. Сборка APK (запускается только после превью)
   build:
-    name: Build Android APK
-    runs-on: ubuntu-24.04
-    permissions:
-      contents: write # Нужно, чтобы выложить файл в Releases
+    needs: preview
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v5
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      # Android SDK уже установлен на runner'е (ANDROID_HOME), отдельная установка не нужна
+      - name: Accept Android SDK licenses
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
 
       - name: Install dependencies
-        run: npm install # npm ci требовал package-lock.json, которого нет в репозитории
+        run: npm install
+
+      - name: Add Android platform
+        run: |
+          npx cap add android
+          npx cap sync android
 
       - name: Check signing secrets
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
-          missing=0
-          if [ -z "$KEYSTORE_BASE64" ]; then echo "::error::Не задан секрет KEYSTORE_BASE64"; missing=1; fi
-          if [ -z "$KEYSTORE_PASSWORD" ]; then echo "::error::Не задан секрет KEYSTORE_PASSWORD"; missing=1; fi
-          if [ -z "$KEY_ALIAS" ]; then echo "::error::Не задан секрет KEY_ALIAS"; missing=1; fi
-          if [ -z "$KEY_PASSWORD" ]; then echo "::error::Не задан секрет KEY_PASSWORD"; missing=1; fi
-          exit $missing
-
-      - name: Create Android project
-        run: |
-          if [ ! -d "android" ]; then
-            npx cap add android
+          if [ -z "$KEYSTORE_BASE64" ]; then
+            echo "::error::Нет секрета KEYSTORE_BASE64. См. SECRETS.txt"
+            exit 1
           fi
-          npx cap sync android
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'zulu'
-          java-version: '17'
+      - name: Build release APK and AAB (unsigned)
+        working-directory: android
+        run: ./gradlew assembleRelease bundleRelease --no-daemon
 
-      - name: Decode and check keystore
+      - name: Sign APK and AAB
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-        run: |
-          echo "$KEYSTORE_BASE64" | base64 -di > release-key.keystore
-          keytool -list -keystore release-key.keystore -storepass "$KEYSTORE_PASSWORD" > /dev/null || {
-            echo "::error::Не удалось открыть ключ. Проверьте секреты KEYSTORE_BASE64 и KEYSTORE_PASSWORD."
-            exit 1
-          }
-
-      - name: Build APK and AAB
-        run: |
-          cd android
-          chmod +x gradlew
-          ./gradlew assembleRelease bundleRelease --no-daemon
-
-      - name: Sign files
-        env:
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
-          BT="$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -n 1)"
-          APK=$(find android/app/build/outputs/apk/release -name "*.apk" | head -n 1)
-          "$BT/zipalign" -f -p 4 "$APK" aligned.apk
-          "$BT/apksigner" sign --ks release-key.keystore --ks-pass env:KEYSTORE_PASSWORD --ks-key-alias "$KEY_ALIAS" --key-pass env:KEY_PASSWORD --out GL1800-manual.apk aligned.apk
-          "$BT/apksigner" verify GL1800-manual.apk
-          AAB=$(find android/app/build/outputs/bundle/release -name "*.aab" | head -n 1)
-          cp "$AAB" GL1800-manual.aab
-          jarsigner -keystore release-key.keystore -storepass:env KEYSTORE_PASSWORD -keypass:env KEY_PASSWORD GL1800-manual.aab "$KEY_ALIAS"
+          set -e
+          echo "$KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/release.keystore"
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          UNSIGNED=$(ls android/app/build/outputs/apk/release/*.apk | head -1)
 
-      - name: Create GitHub Release
+          # APK: выравнивание + подпись (v1-v3)
+          "$BT/zipalign" -p -f 4 "$UNSIGNED" aligned.apk
+          KS_PASS="$KEYSTORE_PASSWORD" K_PASS="$KEY_PASSWORD" "$BT/apksigner" sign \
+            --ks "$RUNNER_TEMP/release.keystore" --ks-key-alias "$KEY_ALIAS" \
+            --ks-pass env:KS_PASS --key-pass env:K_PASS \
+            --out GL1800-manual.apk aligned.apk
+          "$BT/apksigner" verify --print-certs GL1800-manual.apk
+
+          # AAB для Google Play
+          cp android/app/build/outputs/bundle/release/app-release.aab GL1800-manual.aab
+          jarsigner -keystore "$RUNNER_TEMP/release.keystore" \
+            -storepass "$KEYSTORE_PASSWORD" -keypass "$KEY_PASSWORD" \
+            GL1800-manual.aab "$KEY_ALIAS"
+
+          rm -f "$RUNNER_TEMP/release.keystore" aligned.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GL1800-manual-release
+          path: |
+            GL1800-manual.apk
+            GL1800-manual.aab
+
+      - name: Publish to Releases
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.${{ github.run_number }}
-          name: Сборка №${{ github.run_number }}
+          tag_name: build-${{ github.run_number }}
+          name: GL1800, сборка ${{ github.run_number }}
           files: |
             GL1800-manual.apk
             GL1800-manual.aab
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
