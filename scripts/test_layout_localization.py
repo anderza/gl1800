@@ -29,6 +29,14 @@ def main():
                     "Figure Label":"Подпись рисунка"}
         for item in labels["1"]:
             item["ru"]=translated[item["source"]]
+            # Explicit cell boundaries; do not assume the source word's width
+            # is the entire usable cell width after translation.
+            if item["source"]=="Engine Oil":
+                item["available_width"]=230
+            elif item["source"]=="Replace":
+                item["available_width"]=250
+            else:
+                item["available_width"]=250
         template.write_text(json.dumps(labels,ensure_ascii=False),encoding="utf-8")
         result=process(src,template,dest,report,require_complete=True)
         assert result["completed"]
