@@ -34,6 +34,14 @@ def main(src,translations,outdir):
                 continue
             entry["ru"]=phrases[source_text]
             found.add(source_text)
+            if originalpage=="7" and source_text=="ITEM":
+                entry["align"]="center"
+                entry["cell_bbox"]=[125.2,236.5,289.0,250]
+            elif originalpage=="7" and source_text=="SPECIFICATIONS":
+                entry["align"]="center"
+                entry["cell_bbox"]=[289.0,236.5,553.0,250]
+            elif source_text=="GENERAL SPECIFICATIONS":
+                entry["prefer_condensed"]=True
             x=entry["bbox"][0]
             if originalpage=="7" and 130<=x<270:
                 entry["available_width"]=145
