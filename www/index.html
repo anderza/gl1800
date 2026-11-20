@@ -331,7 +331,7 @@ function normalizeToc(raw){
   (list||[]).forEach(function(it){
     if(Array.isArray(it)){out.push({title:String(it[0]),page:+it[1]||1,children:[]});return}
     if(!it||typeof it!=="object")return;
-    var title=pick(it,["title","label","name","text"])||"Раздел";var page=pick(it,["page","pageNumber","page_index","pageIndex","pageNo"]);
+    var title=pick(it,["title","label","name","text"])||"Раздел";var page=pick(it,["pdfPage","startPage","page","pageNumber","page_index","pageIndex","pageNo"]);
     var kids=pick(it,["children","items","kids","sub","subitems"])||[];
     out.push({title:String(title),page:page?+page:null,children:normalizeToc(kids)});
   });return out;
