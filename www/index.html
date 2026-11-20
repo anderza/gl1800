@@ -144,6 +144,7 @@ input{user-select:text;-webkit-user-select:text}
     <button class="iconbtn" id="btnToc" title="Главы и закладки" aria-label="Главы">☰</button>
     <div class="brand"><b>GL1800 · Service Manual</b><span class="mono" id="brandsub">загрузка…</span></div>
     <a class="txtbtn acc" href="service.html" title="Русский справочник по ТО">🔧 ТО</a>
+    <button class="txtbtn" id="btnRu" title="Русский перевод текущей страницы">RU</button>
     <button class="iconbtn blue" id="btnSearch" title="Поиск" aria-label="Поиск">🔍</button>
     <button class="iconbtn amber" id="btnTheme" title="Тема" aria-label="Тема">◐</button>
     <button class="iconbtn" id="btnFull" title="На весь экран" aria-label="Полный экран">⛶</button>
@@ -169,6 +170,7 @@ input{user-select:text;-webkit-user-select:text}
 </div>
 
 <div id="scrim"></div>
+<div id="translationPanel" style="display:none;position:fixed;z-index:65;inset:8% 4% 12%;overflow:auto;background:var(--surface);color:var(--ink);border:2px solid var(--cyan);padding:16px;box-shadow:var(--shadow)"><button class="txtbtn" id="closeTranslation" style="float:right">✕ Закрыть</button><h3>Русский перевод · стр. <span id="ruPage"></span></h3><div id="ruText" style="white-space:pre-wrap;line-height:1.65;clear:both;padding-top:12px"></div></div>
 <aside class="drawer" id="tocDrawer" aria-label="Главы и закладки">
   <div class="dhead"><b>Навигация</b><button class="dclose" data-close aria-label="Закрыть">✕</button></div>
   <div class="tabs"><button class="tab on" id="tabToc">Главы</button><button class="tab" id="tabBm">Закладки</button></div>
@@ -410,6 +412,14 @@ function hideToast(){$("toast").classList.remove("show");clearTimeout(toastTimer
 $("toastClose").addEventListener("click",function(){if($("toastNever").checked)store.set("hideHints",true);hideToast()});
 $("toastNever").addEventListener("change",function(){if(this.checked){store.set("hideHints",true);hideToast()}});
 
+var translationsRu={};
+fetch("translation_ru.json").then(function(r){return r.ok?r.json():{}}).then(function(x){translationsRu=x}).catch(function(){});
+$("btnRu").addEventListener("click",function(){
+  $("ruPage").textContent=pageNum;
+  $("ruText").textContent=translationsRu[String(pageNum)]||"Перевод этой страницы пока не подготовлен. Оригинальная страница PDF остаётся доступной в просмотрщике.";
+  $("translationPanel").style.display="block";
+});
+$("closeTranslation").addEventListener("click",function(){$("translationPanel").style.display="none"});
 openDoc();
 </script>
 </body>
