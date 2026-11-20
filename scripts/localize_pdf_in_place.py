@@ -12,19 +12,50 @@ from collections import Counter
 from pathlib import Path
 import fitz
 
-FONTS = (
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-    "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
-)
+FONTS = {
+    "regular": ("/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf",
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+    "bold": ("/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf",
+             "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
+    "condensed": ("/usr/share/fonts/truetype/noto/NotoSans-Condensed.ttf",
+                  "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf"),
+    "condensed_bold": ("/usr/share/fonts/truetype/noto/NotoSans-CondensedBold.ttf",
+                       "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf"),
+}
 
 def normalize(text):
     return re.sub(r"\s+", " ", text).strip()
 
-def default_font():
-    for name in FONTS:
-        if Path(name).exists():
-            return name
-    raise RuntimeError("Install a Cyrillic TTF, e.g. fonts-dejavu-core")
+def font_resources():
+    result = {}
+    for style, options in FONTS.items():
+        name = next((path for path in options if Path(path).is_file()), None)
+        if not name:
+            raise RuntimeError("Cyrillic fonts missing: install fonts-noto-core")
+        result[style] = (name, fitz.Font(fontfile=name))
+    return result
+
+def fits(value, font, size, width):
+    return font.text_length(value, fontsize=size) <= width + 0.001
+
+def fit_label(entry, source, fonts, width):
+    text = normalize(entry.get("ru", ""))
+    if not text:
+        return None
+    bold = bool(entry.get("bold", "Bold" in source["font"] or "Black" in source["font"]))
+    regular = "bold" if bold else "regular"
+    narrow = "condensed_bold" if bold else "condensed"
+    size = source["size"]
+    styles = (narrow, regular) if entry.get("prefer_condensed") else (regular, narrow)
+    for style in styles:
+        if fits(text, fonts[style][1], size, width):
+            return style, size
+    minimum = max(7.0, size * .8)
+    while size >= minimum:
+        if fits(text, fonts[narrow][1], size, width):
+            return narrow, size
+        size -= .2
+    return None
 
 def extract_spans(page):
     spans = []
@@ -38,7 +69,9 @@ def extract_spans(page):
                     spans.append({
                         "text": source, "bbox": list(span["bbox"]),
                         "origin": list(span["origin"]), "size": span["size"],
-                        "color": span["color"]
+                        "color": span["color"], "font": span["font"],
+                        "ascender": float(span.get("ascender", .75)),
+                        "descender": float(span.get("descender", -.22))
                     })
     return spans
 
@@ -50,8 +83,7 @@ def process(original, positions_file, output, report_file, require_complete=Fals
     doc = fitz.open(original)
     if doc.is_encrypted:
         raise RuntimeError("Encrypted PDF")
-    font = default_font()
-    f = fitz.Font(fontfile=font)
+    fonts = font_resources()
     failures, summary = [], Counter()
     page_report = []
     for i, page in enumerate(doc):
@@ -74,27 +106,51 @@ def process(original, positions_file, output, report_file, require_complete=Fals
                 continue
             idx, sp = matching[0]
             target = normalize(entry.get("ru",""))
-            width = max(fitz.Rect(sp["bbox"]).width * 1.05,
-                        min(float(entry.get("available_width", 0)),
-                            page.rect.x1 - sp["origin"][0] - 2))
-            size = sp["size"]
-            while size >= max(5.5, sp["size"]*.5) and f.text_length(target,fontsize=size)>width:
-                size -= .25
-            if not target or size < max(5.5,sp["size"]*.5):
+            left, baseline = sp["origin"]
+            width = max(fitz.Rect(sp["bbox"]).width * 1.04,
+                        float(entry.get("available_width", 0)))
+            width = min(width, page.rect.x1 - left - 2)
+            # Keep each label within its table column or illustration callout.
+            same_line = [other["origin"][0] - left - 5
+                         for oid, other in enumerate(originals)
+                         if oid != idx and other["origin"][0] > left + 3
+                         and abs(other["origin"][1] - baseline) < 2]
+            if same_line:
+                width = min(width, min(same_line))
+            cell = entry.get("cell_bbox")
+            if cell:
+                cell = fitz.Rect(cell)
+                width = min(cell.width - 4, page.rect.width - 4)
+            choice = fit_label(entry, sp, fonts, width)
+            if choice is None:
                 failures.append({"page":i+1,"source":source,
-                                 "reason":"translation cannot fit original text box"})
+                                 "reason":"Russian text cannot fit its table cell / line"})
                 continue
-            candidates.append((idx,sp,target,size))
+            style, size = choice
+            target = normalize(entry["ru"])
+            face = fonts[style][1]
+            if cell and entry.get("align") == "center":
+                x = cell.x0 + (cell.width - face.text_length(target, fontsize=size)) / 2
+            elif cell and entry.get("align") == "right":
+                x = cell.x1 - face.text_length(target, fontsize=size) - 2
+            else:
+                x = left
+            # Align the visual line centre despite different font ascenders.
+            baseline += ((face.ascender + face.descender) -
+                         (sp["ascender"] + sp["descender"])) * size / 2
+            candidates.append((idx, sp, target, style, size, x, baseline))
             used.add(idx)
         # No filled white rectangle: preserve table shading and underlying artwork.
-        for _, sp, _, _ in candidates:
+        for _, sp, *_ in candidates:
             page.add_redact_annot(fitz.Rect(sp["bbox"]), fill=False, cross_out=False)
         if candidates:
             page.apply_redactions(images=0,graphics=0,text=0)
-        for _, sp, target, size in candidates:
-            page.insert_text(fitz.Point(sp["origin"]), target,
-                             fontfile=font, fontname="Cyrillic", fontsize=size,
-                             color=font_to_rgb(sp["color"]), overlay=True)
+        for _, sp, target, style, size, x, baseline in candidates:
+            font_path, _ = fonts[style]
+            page.insert_text(fitz.Point(x, baseline), target,
+                             fontfile=font_path,
+                             fontname="RULabel" + style.title().replace("_", ""),
+                             fontsize=size, color=font_to_rgb(sp["color"]), overlay=True)
         untranslated = [sp["text"] for idx,sp in enumerate(originals)
                         if idx not in used and re.search(r"[A-Za-z]{3}",sp["text"])]
         summary["replaced"] += len(candidates)
