@@ -60,7 +60,7 @@ def wrap_lines(content, font, size, width):
 def has_illustrations(page):
     # Some line art is composed of hundreds of vector paths, not image objects.
     try:
-        return bool(page.get_image_info()) or len(page.get_drawings()) >= 8
+        return bool(page.get_image_info()) or bool(page.get_drawings())
     except Exception:
         return True
 
