@@ -32,6 +32,7 @@ jobs:
       - name: Generate Russian PDF pages
         run: |
           python -m pip install "PyMuPDF==1.26.7"
+          python scripts/test_original_diagram_labels.py
           python scripts/build_russian_manual.py www/manual.pdf www/translation_ru.json www/manual_ru.pdf
           test -s www/manual_ru.pdf
           rm www/manual.pdf
@@ -73,6 +74,7 @@ jobs:
       - name: Generate Russian PDF pages
         run: |
           python -m pip install "PyMuPDF==1.26.7"
+          python scripts/test_original_diagram_labels.py
           python scripts/build_russian_manual.py www/manual.pdf www/translation_ru.json www/manual_ru.pdf
           test -s www/manual_ru.pdf
           rm www/manual.pdf
