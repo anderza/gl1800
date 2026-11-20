@@ -91,59 +91,23 @@ jobs:
                   icon.save(os.path.join(path,name))
           PY
 
-      - name: Check signing secrets
-        env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-        run: |
-          if [ -z "$KEYSTORE_BASE64" ]; then
-            echo "::error::Нет секрета KEYSTORE_BASE64. См. SECRETS.txt"
-            exit 1
-          fi
-
-      - name: Build release APK and AAB (unsigned)
+      - name: Build installable debug APK
         working-directory: android
-        run: ./gradlew assembleRelease bundleRelease --no-daemon
+        run: ./gradlew assembleDebug --no-daemon
 
-      - name: Sign APK and AAB
-        env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: |
-          set -e
-          echo "$KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/release.keystore"
-          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
-          UNSIGNED=$(ls android/app/build/outputs/apk/release/*.apk | head -1)
-
-          # APK: выравнивание + подпись (v1-v3)
-          "$BT/zipalign" -p -f 4 "$UNSIGNED" aligned.apk
-          KS_PASS="$KEYSTORE_PASSWORD" K_PASS="$KEY_PASSWORD" "$BT/apksigner" sign \
-            --ks "$RUNNER_TEMP/release.keystore" --ks-key-alias "$KEY_ALIAS" \
-            --ks-pass env:KS_PASS --key-pass env:K_PASS \
-            --out GL1800-manual.apk aligned.apk
-          "$BT/apksigner" verify --print-certs GL1800-manual.apk
-
-          # AAB для Google Play
-          cp android/app/build/outputs/bundle/release/app-release.aab GL1800-manual.aab
-          jarsigner -keystore "$RUNNER_TEMP/release.keystore" \
-            -storepass "$KEYSTORE_PASSWORD" -keypass "$KEY_PASSWORD" \
-            GL1800-manual.aab "$KEY_ALIAS"
-
-          rm -f "$RUNNER_TEMP/release.keystore" aligned.apk
+      - name: Prepare downloadable APK
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk GL1800-manual.apk
 
       - uses: actions/upload-artifact@v4
         with:
-          name: GL1800-manual-release
+          name: GL1800-manual-installable
           path: |
             GL1800-manual.apk
-            GL1800-manual.aab
 
       - name: Publish to Releases
         uses: softprops/action-gh-release@v2
         with:
           tag_name: build-${{ github.run_number }}
-          name: GL1800, сборка ${{ github.run_number }}
+          name: GL1800, установочная сборка ${{ github.run_number }}
           files: |
             GL1800-manual.apk
-            GL1800-manual.aab
