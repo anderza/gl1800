@@ -74,7 +74,9 @@ def process(original, positions_file, output, report_file, require_complete=Fals
                 continue
             idx, sp = matching[0]
             target = normalize(entry.get("ru",""))
-            width = fitz.Rect(sp["bbox"]).width * 1.05
+            width = max(fitz.Rect(sp["bbox"]).width * 1.05,
+                        min(float(entry.get("available_width", 0)),
+                            page.rect.x1 - sp["origin"][0] - 2))
             size = sp["size"]
             while size >= max(5.5, sp["size"]*.5) and f.text_length(target,fontsize=size)>width:
                 size -= .25
