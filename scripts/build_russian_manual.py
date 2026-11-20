@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Build a Russian-first service manual, one PDF page per source page.
 
-The original selectable English text is removed. Original pictures, vector
-drawings and diagrams are preserved. Russian page text comes from the reviewed
-translation_ru.json dataset.
+Russian page text is shown with a complete reference copy of the source
+artwork. Crucially, the original figure callouts, wiring labels and table
+headings are preserved instead of being deleted by whole-page redaction.
 
 This is a first-pass page reconstruction: translated paragraphs do not yet
 follow the original typesetting or translated callout coordinates. Embedded
@@ -64,25 +64,6 @@ def has_illustrations(page):
     except Exception:
         return True
 
-def strip_selectable_english(page):
-    count = 0
-    for block in page.get_text("dict").get("blocks", []):
-        if block.get("type") != 0:
-            continue
-        for line in block.get("lines", []):
-            for span in line.get("spans", []):
-                if not span.get("text", "").strip():
-                    continue
-                rect = fitz.Rect(span["bbox"]) & page.rect
-                if rect.is_empty or rect.width < 1 or rect.height < 1:
-                    continue
-                page.add_redact_annot(rect, fill=(1, 1, 1), cross_out=False)
-                count += 1
-    if count:
-        # Keep every image and vector drawing; remove only selectable text.
-        page.apply_redactions(images=0, graphics=0, text=0)
-    return count
-
 def generate(original, translations_file, output):
     translations = json.loads(Path(translations_file).read_text(encoding="utf-8"))
     source = fitz.open(original)
@@ -100,7 +81,11 @@ def generate(original, translations_file, output):
         num = idx + 1
         text = str(translations[str(num)]).strip()
         art = has_illustrations(page)
-        strip_selectable_english(page)
+        # The source PDF also stores figure pointers, wire-color codes and
+        # table captions as selectable text. Redacting the whole page erased
+        # those safety-critical labels. Keep the source artwork page intact
+        # until every diagram caption has a validated Russian replacement.
+        # This temporarily retains English inside the reference diagrams.
 
         width = max(420, page.rect.width)
         margin = min(39, width * .066)
