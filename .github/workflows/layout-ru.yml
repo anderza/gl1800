@@ -1,0 +1,30 @@
+name: Prepare precise GL1800 Russian page layout
+
+on:
+  push:
+    branches: [layout-ru]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PDF parser
+        run: python -m pip install "PyMuPDF==1.26.7"
+      - name: Verify original geometry is preserved in tables and drawings
+        run: python scripts/test_layout_localization.py
+      - name: Extract precise text coordinates from original GL1800 manual
+        run: python scripts/extract_layout_spans.py www/manual.pdf layout/source_positions_template.json
+      - name: Publish page-by-page position template (not a completed translation)
+        uses: actions/upload-artifact@v4
+        with:
+          name: GL1800-757-page-layout-map
+          path: layout/source_positions_template.json
+          retention-days: 30
