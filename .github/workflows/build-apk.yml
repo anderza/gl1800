@@ -85,32 +85,54 @@ jobs:
       - name: Install image generator dependency
         run: python3 -m pip install --user Pillow
 
-      - name: Apply black and gold Gold Wing app icon
+      - name: Apply requested gold Honda Gold Wing icon (thin frame)
         run: |
           python3 - <<'PY'
-          import os, struct, zlib, math
-          from PIL import Image, ImageDraw, ImageFont
-          size=512
-          im=Image.new('RGBA',(size,size),'#050505')
-          d=ImageDraw.Draw(im)
-          gold='#DDAF36'
-          d.rounded_rectangle((13,13,499,499),radius=86,outline=gold,width=14)
-          for y in range(3):
-              for side in (-1,1):
-                  x0=256
-                  x1=256+side*(175-y*22)
-                  d.polygon([(x0,170+y*20),(x1,87+y*24),(x1-side*30,111+y*24),(x0,184+y*20)],fill=gold)
-          font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-          for label,y,sz in [('GOLD WING',260,47),('GL1800',337,72),('SERVICE MANUAL',430,24)]:
-              ft=ImageFont.truetype(font,sz)
-              bb=d.textbbox((0,0),label,font=ft)
-              d.text(((512-(bb[2]-bb[0]))/2,y),label,font=ft,fill=gold)
-          for folder,px in [('mipmap-mdpi',48),('mipmap-hdpi',72),('mipmap-xhdpi',96),('mipmap-xxhdpi',144),('mipmap-xxxhdpi',192)]:
-              path='android/app/src/main/res/'+folder
-              os.makedirs(path,exist_ok=True)
-              icon=im.resize((px,px),Image.Resampling.LANCZOS)
-              for name in ('ic_launcher.png','ic_launcher_round.png','ic_launcher_foreground.png'):
-                  icon.save(os.path.join(path,name))
+          import base64
+          from io import BytesIO
+          from pathlib import Path
+          from PIL import Image
+
+          # Store image losslessly as a repository-verified base64 WebP asset.
+          encoded = Path("assets/gl1800-thin-gold-icon.webp.b64").read_text().strip()
+          original = Image.open(BytesIO(base64.b64decode(encoded, validate=True))).convert("RGBA")
+          if original.size != (160, 160):
+              raise RuntimeError(f"Unexpected app icon source dimensions: {original.size}")
+
+          root = Path("android/app/src/main/res")
+          for folder, px in [
+              ("mipmap-mdpi", 48),
+              ("mipmap-hdpi", 72),
+              ("mipmap-xhdpi", 96),
+              ("mipmap-xxhdpi", 144),
+              ("mipmap-xxxhdpi", 192),
+          ]:
+              dest = root / folder
+              dest.mkdir(parents=True, exist_ok=True)
+
+              # Legacy launchers show the full square icon.
+              launcher = original.resize((px, px), Image.Resampling.LANCZOS)
+              launcher.save(dest / "ic_launcher.png")
+              launcher.save(dest / "ic_launcher_round.png")
+
+              # Adaptive launchers crop to a system-controlled shape. Give
+              # the emblem padding so the gold text and wing survive the mask.
+              fg_px = round(px * 108 / 48)
+              fg = Image.new("RGBA", (fg_px, fg_px), (0, 0, 0, 0))
+              emblem_px = round(fg_px * 0.64)
+              emblem = original.resize((emblem_px, emblem_px), Image.Resampling.LANCZOS)
+              fg.alpha_composite(emblem, ((fg_px - emblem_px) // 2, (fg_px - emblem_px) // 2))
+              fg.save(dest / "ic_launcher_foreground.png")
+
+          # Ensure adaptive icon padding has a dark background.
+          values = root / "values"
+          values.mkdir(parents=True, exist_ok=True)
+          (values / "ic_launcher_background.xml").write_text(
+              '<?xml version="1.0" encoding="utf-8"?>\\n'
+              '<resources><color name="ic_launcher_background">#050505</color></resources>\\n',
+              encoding="utf-8",
+          )
+          print("Honda Gold Wing thin gold-frame icon applied to all Android densities")
           PY
 
       - name: Build installable debug APK
