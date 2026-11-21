@@ -217,7 +217,7 @@ async function openDoc(){
   $("error").classList.add("hide");$("loading").classList.remove("hide");$("loadmsg").textContent="Подключаем движок PDF…";
   try{
     await ensurePdfJs();$("loadmsg").textContent="Открываем руководство…";
-    var task=window.pdfjsLib.getDocument({url:"manual_ru.pdf",cMapUrl:"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/",cMapPacked:true});
+    var task=window.pdfjsLib.getDocument({url:"manual.pdf",cMapUrl:"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/",cMapPacked:true});
     task.onProgress=function(p){if(p.total)$("progbar").style.width=Math.round(p.loaded/p.total*100)+"%"};
     pdf=await task.promise;
     $("pagetotal").textContent="/ "+pdf.numPages;$("pager").max=pdf.numPages;
