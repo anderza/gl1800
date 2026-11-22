@@ -24,8 +24,9 @@ jobs:
           test -s www/data.js
           grep -q 'pages/p' www/index.html
           mkdir -p www/pages
-          for i in $(seq -w 1 8); do
-            a="www/pages-${i}.zip"
+          for i in $(seq 1 8); do
+            printf -v suffix "%02d" "$i"
+            a="www/pages-${suffix}.zip"
             test -s "$a" || { echo "Missing translated pages archive $a"; exit 1; }
             unzip -oq "$a" -d www
           done
