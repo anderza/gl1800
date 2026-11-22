@@ -1,5 +1,7 @@
 name: GL1800 Russian PNG APK
 on:
+  push:
+    branches: [gl1800-russian-html-images]
   workflow_dispatch:
 permissions:
   contents: write
