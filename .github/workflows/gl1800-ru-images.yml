@@ -1,7 +1,5 @@
 name: GL1800 Russian PNG APK
 on:
-  push:
-    branches: [gl1800-russian-html-images]
   workflow_dispatch:
 permissions:
   contents: write
@@ -10,18 +8,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate and unpack all Russian pages
+      - name: Download translated HTML bundle from Google Drive
         shell: bash
         run: |
           set -euo pipefail
-          test -s www/data.js || { echo "Missing Russian image-page data.js"; exit 1; }
-          grep -q 'pages/p' www/index.html || { echo "Wrong HTML viewer: expected PNG page viewer"; exit 1; }
+          python -m pip install --user "gdown==5.2.0"
+          python -m gdown "https://drive.google.com/uc?id=1qgcUc0OC7fTcSlU7ZNOBrykVeA4dSQJ7" -O /tmp/GL1800_RU_HTML_Android_GitHub.zip
+          unzip -tq /tmp/GL1800_RU_HTML_Android_GitHub.zip
+          unzip -oq /tmp/GL1800_RU_HTML_Android_GitHub.zip -d .
+      - name: Validate 757 translated PNG pages and offline HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s www/index.html
+          test -s www/data.js
+          grep -q 'pages/p' www/index.html
           mkdir -p www/pages
-          archives=(www/pages-*.zip)
-          test "${#archives[@]}" -eq 8 || { echo "All 8 page archives are required"; exit 1; }
-          for a in "${archives[@]}"; do unzip -oq "$a" -d www; done
+          for i in $(seq -w 1 8); do
+            a="www/pages-${i}.zip"
+            test -s "$a" || { echo "Missing translated pages archive $a"; exit 1; }
+            unzip -oq "$a" -d www
+          done
           count=$(find www/pages -maxdepth 1 -name 'p???.png' | wc -l)
-          test "$count" -eq 757 || { echo "Expected 757 PNG pages, found $count"; exit 1; }
+          test "$count" -eq 757 || { echo "Expected 757 Russian PNG pages, found $count"; exit 1; }
           test -s www/pages/p001.png
           test -s www/pages/p757.png
           rm -f www/manual.pdf www/manual_ru.pdf www/pages-*.zip
