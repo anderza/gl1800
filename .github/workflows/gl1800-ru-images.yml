@@ -10,32 +10,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download translated HTML bundle from Google Drive
+      - name: Download and inspect Russian manual bundle
         shell: bash
         run: |
-          set -euo pipefail
-          python -m pip install --user "gdown==5.2.0"
-          python -m gdown "https://drive.google.com/uc?id=1qgcUc0OC7fTcSlU7ZNOBrykVeA4dSQJ7" -O /tmp/GL1800_RU_HTML_Android_GitHub.zip
-          unzip -tq /tmp/GL1800_RU_HTML_Android_GitHub.zip
-          unzip -oq /tmp/GL1800_RU_HTML_Android_GitHub.zip -d .
-      - name: Validate 757 translated PNG pages and offline HTML
+          set -Eeuo pipefail
+          trap 'echo "::error::Download/extraction failed at line $LINENO (exit $?)"' ERR
+          python -m pip install "gdown==5.2.0"
+          python -m gdown --fuzzy "https://drive.google.com/file/d/1qgcUc0OC7fTcSlU7ZNOBrykVeA4dSQJ7/view" -O /tmp/gl1800-ru.zip
+          echo "Download size and file type:"
+          ls -lh /tmp/gl1800-ru.zip
+          file /tmp/gl1800-ru.zip
+          unzip -tq /tmp/gl1800-ru.zip
+          unzip -oq /tmp/gl1800-ru.zip -d .
+          echo "Extracted HTML bundle:"
+          find www -maxdepth 1 -type f -printf '%f %s bytes\\n' | sort
+      - name: Validate and unpack all 757 translated PNG pages
         shell: bash
         run: |
-          set -euo pipefail
-          test -s www/index.html
-          test -s www/data.js
-          grep -q 'pages/p' www/index.html
+          set -Eeuo pipefail
+          trap 'echo "::error::Validation failed at line $LINENO (exit $?)"' ERR
+          test -s www/index.html || { echo "::error::Missing www/index.html"; exit 1; }
+          test -s www/data.js || { echo "::error::Missing www/data.js"; exit 1; }
+          grep -Fq 'pages/p' www/index.html || { echo "::error::HTML is not the translated image viewer"; exit 1; }
           mkdir -p www/pages
           for i in $(seq 1 8); do
-            printf -v suffix "%02d" "$i"
-            a="www/pages-${suffix}.zip"
-            test -s "$a" || { echo "Missing translated pages archive $a"; exit 1; }
-            unzip -oq "$a" -d www
+            printf -v suffix '%02d' "$i"
+            archive="www/pages-${suffix}.zip"
+            test -s "$archive" || { echo "::error::Missing $archive"; exit 1; }
+            echo "Extracting $archive"
+            unzip -oq "$archive" -d www
           done
           count=$(find www/pages -maxdepth 1 -name 'p???.png' | wc -l)
-          test "$count" -eq 757 || { echo "Expected 757 Russian PNG pages, found $count"; exit 1; }
-          test -s www/pages/p001.png
-          test -s www/pages/p757.png
+          echo "Translated pages found: $count"
+          test "$count" -eq 757 || { echo "::error::Expected 757 Russian PNG pages, found $count"; exit 1; }
+          test -s www/pages/p001.png || { echo "::error::Missing p001.png"; exit 1; }
+          test -s www/pages/p757.png || { echo "::error::Missing p757.png"; exit 1; }
           rm -f www/manual.pdf www/manual_ru.pdf www/pages-*.zip
       - uses: actions/setup-node@v4
         with:
