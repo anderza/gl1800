@@ -1,13 +1,12 @@
 {
-  "name": "gl1800-manual",
-  "version": "1.0.0",
+  "name": "gl1800-russian-pages",
+  "version": "1.1.0",
   "private": true,
-  "description": "Honda Gold Wing GL1800 — руководство (RU)",
   "dependencies": {
-    "@capacitor/android": "^6.2.0",
-    "@capacitor/core": "^6.2.0"
+    "@capacitor/core": "6.2.0",
+    "@capacitor/android": "6.2.0"
   },
   "devDependencies": {
-    "@capacitor/cli": "^6.2.0"
+    "@capacitor/cli": "6.2.0"
   }
 }
