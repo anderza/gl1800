@@ -21,6 +21,9 @@ jobs:
           ls -lh /tmp/gl1800-ru.zip
           file /tmp/gl1800-ru.zip
           unzip -tq /tmp/gl1800-ru.zip
+          echo "Checking that Google Drive has the translated image edition, not the old PDF edition"
+          unzip -Z1 /tmp/gl1800-ru.zip | grep -Fx 'www/data.js' || { echo "::error::Google Drive still contains the old English PDF package"; exit 1; }
+          unzip -Z1 /tmp/gl1800-ru.zip | grep -Fx 'www/pages-08.zip' || { echo "::error::Russian image archives are missing"; exit 1; }
           unzip -oq /tmp/gl1800-ru.zip -d .
           echo "Extracted HTML bundle:"
           find www -maxdepth 1 -type f -printf '%f %s bytes\\n' | sort
