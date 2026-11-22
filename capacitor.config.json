@@ -2,5 +2,8 @@
   "appId": "com.gl1800.manual",
   "appName": "GL1800 Руководство",
   "webDir": "www",
-  "backgroundColor": "#14181d"
+  "backgroundColor": "#161718",
+  "server": {
+    "androidScheme": "https"
+  }
 }
