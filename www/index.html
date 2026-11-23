@@ -58,7 +58,7 @@ input{user-select:text;-webkit-user-select:text}
 .txtbtn:active{transform:scale(.96)}
 .txtbtn.acc{background:var(--blue);border-color:var(--blue);color:#fff;text-decoration:none}
 
-#stage{position:relative;overflow:auto;display:grid;padding:10px;touch-action:pan-x pan-y;min-width:0;max-width:100%;
+#stage{position:relative;overflow:auto;display:flex;padding:10px;touch-action:pan-x pan-y;min-width:0;max-width:100%;
   background:repeating-linear-gradient(0deg,var(--grid) 0 1px,transparent 1px 28px),repeating-linear-gradient(90deg,var(--grid) 0 1px,transparent 1px 28px),var(--bg)}
 #pagewrap{margin:auto;position:relative;background:#fff;border:1px solid var(--line2);box-shadow:var(--shadow);transform-origin:0 0;will-change:transform}
 #canvas{display:block;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
@@ -269,7 +269,7 @@ async function renderPage(){
     ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality="high";
     await page.render({canvasContext:ctx,viewport:vp}).promise;
     if(token!==renderToken)return;
-    await renderTextLayer(page);updateUI();highlightTerm();markCurrentToc();clearSel();
+    await renderTextLayer(page);if(zoomAnchor){var a=zoomAnchor;zoomAnchor=null;stage.scrollLeft=Math.max(0,a.x*zoom/a.z-a.cx);stage.scrollTop=Math.max(0,a.y*zoom/a.z-a.cy)}updateUI();highlightTerm();markCurrentToc();clearSel();
   }catch(e){if(token===renderToken)showError(e)}
   finally{rendering=false;if(pendingRender){pendingRender=false;renderPage()}}
 }
@@ -312,7 +312,7 @@ $("btnZoomIn").addEventListener("click",function(){zoomBy(1.25)});
 $("btnZoomOut").addEventListener("click",function(){zoomBy(0.8)});
 $("btnFit").addEventListener("click",function(){fitMode=fitMode==="width"?"page":"width";renderPage()});
 
-var lastTap=0,suppressClick=false,pinch=null;
+var lastTap=0,suppressClick=false,pinch=null,zoomAnchor=null;
 stage.addEventListener("click",function(){
   if(anyDrawerOpen()){closeDrawers();return}
   if(suppressClick)return;var now=Date.now();
@@ -320,11 +320,11 @@ stage.addEventListener("click",function(){
   lastTap=now;
 });
 function dist(t){var dx=t[0].clientX-t[1].clientX,dy=t[0].clientY-t[1].clientY;return Math.sqrt(dx*dx+dy*dy)||1}
-stage.addEventListener("touchstart",function(e){if(e.touches.length===2){pinch={d:dist(e.touches),z:zoom,r:1};suppressClick=true;e.preventDefault()}},{passive:false});
-stage.addEventListener("touchmove",function(e){suppressClick=true;if(pinch&&e.touches.length===2){e.preventDefault();pinch.r=clamp(dist(e.touches)/pinch.d,0.3,4);wrap.style.transform="scale("+pinch.r+")"}},{passive:false});
+stage.addEventListener("touchstart",function(e){if(e.touches.length===2){var b=stage.getBoundingClientRect(),cx=(e.touches[0].clientX+e.touches[1].clientX)/2-b.left,cy=(e.touches[0].clientY+e.touches[1].clientY)/2-b.top;pinch={d:dist(e.touches),z:zoom,r:1,cx:cx,cy:cy,x:stage.scrollLeft+cx,y:stage.scrollTop+cy};suppressClick=true;e.preventDefault()}},{passive:false});
+stage.addEventListener("touchmove",function(e){suppressClick=true;if(pinch&&e.touches.length===2){e.preventDefault();pinch.r=clamp(dist(e.touches)/pinch.d,MINZ/pinch.z,MAXZ/pinch.z);wrap.style.transform="scale("+pinch.r+")"}},{passive:false});
 stage.addEventListener("touchend",function(e){
   clearSel();
-  if(pinch&&e.touches.length<2){var base=pinch.z,r=pinch.r;pinch=null;wrap.style.transform="";fitMode="custom";zoom=clamp(base*r,MINZ,MAXZ);renderPage();setTimeout(function(){suppressClick=false},350)}
+  if(pinch&&e.touches.length<2){var base=pinch.z,r=pinch.r;zoomAnchor={x:pinch.x,y:pinch.y,cx:pinch.cx,cy:pinch.cy,z:base};pinch=null;wrap.style.transform="";fitMode="custom";zoom=clamp(base*r,MINZ,MAXZ);renderPage();setTimeout(function(){suppressClick=false},350)}
   else if(e.touches.length===0){setTimeout(function(){suppressClick=false},120)}
 },{passive:false});
 
