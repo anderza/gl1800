@@ -37,7 +37,7 @@ input{user-select:text;-webkit-user-select:text}
 *{scrollbar-width:thin;scrollbar-color:var(--thumb) var(--track)}
 .mono{font-family:ui-monospace,Menlo,Consolas,monospace}
 
-#app{position:relative;display:grid;grid-template-rows:auto 1fr auto;height:100vh;height:100dvh;padding-top:var(--st);padding-bottom:var(--sb);min-width:0;max-width:100%}
+#app{position:relative;display:grid;grid-template-rows:auto auto minmax(0,1fr);height:100vh;height:100dvh;padding-top:var(--st);padding-bottom:var(--sb);min-width:0;max-width:100%}
 .bar{display:flex;align-items:center;gap:5px;padding:6px 7px;background:var(--surface);border-bottom:1px solid var(--line);min-height:var(--bar-h);position:relative;flex-wrap:wrap;overflow-x:hidden;min-width:0;max-width:100%}
 .bar::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--key)}
 #bottombar{border-bottom:none;border-top:1px solid var(--line);justify-content:center}
@@ -136,6 +136,20 @@ input{user-select:text;-webkit-user-select:text}
   .bar{gap:4px;padding:6px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* Компактная верхняя панель и страница в пределах области просмотра */
+#bottombar{min-height:34px;flex-wrap:nowrap;justify-content:center;padding:3px 4px;gap:3px;overflow:hidden}
+#bottombar .iconbtn{width:29px;height:29px;font-size:15px}
+#bottombar .txtbtn{height:29px;padding:0 5px;font-size:9px;letter-spacing:0}
+#bottombar #pageinput{width:37px;height:29px;font-size:12px}
+#bottombar #pagetotal{font-size:10px;min-width:29px}
+#bottombar #zoomlabel{font-size:10px;min-width:34px}
+#bottombar #pager{display:none}
+header.bar{min-height:38px;padding:3px 5px;gap:3px;flex-wrap:nowrap}
+header.bar .iconbtn{width:30px;height:30px;font-size:13px}
+header.bar .txtbtn{height:30px;padding:0 5px;font-size:10px}
+header.bar .brand b{font-size:11px}
+#stage{padding:5px;min-height:0;overscroll-behavior:contain}
+@media(max-width:600px){#bottombar .iconbtn{width:28px;height:28px}#bottombar{gap:2px;padding:3px 2px}header.bar .brand{min-width:0}}
 </style>
 </head>
 <body>
@@ -150,13 +164,7 @@ input{user-select:text;-webkit-user-select:text}
     <button class="iconbtn" id="btnFull" title="На весь экран" aria-label="Полный экран">⛶</button>
   </header>
 
-  <main id="stage">
-    <div id="pagewrap"><canvas id="canvas"></canvas><div id="textLayer"></div></div>
-    <div class="overlay" id="loading"><div class="loadbox"><div class="wing"></div><p id="loadmsg">Открываем руководство…</p><div class="prog"><i id="progbar"></i></div></div></div>
-    <div class="overlay hide" id="error"><div class="errcard"><b>Не удалось открыть руководство</b><small id="errmsg"></small><button class="txtbtn acc" id="btnRetry" style="justify-content:center">Повторить</button></div></div>
-  </main>
-
-  <footer class="bar" id="bottombar">
+  <nav class="bar" id="bottombar">
     <button class="iconbtn" id="btnPrev" title="Назад" aria-label="Предыдущая страница">‹</button>
     <input id="pageinput" inputmode="numeric" value="1" aria-label="Номер страницы">
     <span id="pagetotal">/ …</span>
@@ -166,7 +174,14 @@ input{user-select:text;-webkit-user-select:text}
     <button class="iconbtn" id="btnZoomIn" title="Увеличить" aria-label="Увеличить">+</button>
     <button class="txtbtn" id="btnFit" title="Вписать">↔ Ширина</button>
     <input type="range" id="pager" min="1" max="1" value="1" aria-label="Листать страницы">
-  </footer>
+  </nav>
+
+  <main id="stage">
+    <div id="pagewrap"><canvas id="canvas"></canvas><div id="textLayer"></div></div>
+    <div class="overlay" id="loading"><div class="loadbox"><div class="wing"></div><p id="loadmsg">Открываем руководство…</p><div class="prog"><i id="progbar"></i></div></div></div>
+    <div class="overlay hide" id="error"><div class="errcard"><b>Не удалось открыть руководство</b><small id="errmsg"></small><button class="txtbtn acc" id="btnRetry" style="justify-content:center">Повторить</button></div></div>
+  </main>
+
 </div>
 
 <div id="scrim"></div>
@@ -183,13 +198,13 @@ input{user-select:text;-webkit-user-select:text}
 </aside>
 
 <div id="toast" role="status">
-  <div class="trow"><span class="tico">💡</span><p><b>Подсказка.</b> Листайте свайпом или ползунком внизу. Двойной тап — увеличить. Панели закрываются тапом по странице или крестиком.</p><button class="tclose" id="toastClose" aria-label="Закрыть">✕</button></div>
+  <div class="trow"><span class="tico">💡</span><p><b>Подсказка.</b> Увеличивайте и уменьшайте страницу двумя пальцами. Кнопки страниц и масштаба находятся сверху. Панели закрываются тапом по странице или крестиком.</p><button class="tclose" id="toastClose" aria-label="Закрыть">✕</button></div>
   <label><input type="checkbox" id="toastNever"> Больше не показывать</label>
 </div>
 
 <script>
 "use strict";
-var pdf=null,pageNum=1,zoom=1,fitMode="width",rendering=false,pendingRender=false;
+var pdf=null,pageNum=1,zoom=1,fitMode="page",rendering=false,pendingRender=false;
 var pageTexts=null,searchTerm="",bookmarks=[],tocData=[],renderToken=0,MAXDIM=4200;
 var MINZ=0.2,MAXZ=8;
 var $=function(id){return document.getElementById(id)};
@@ -241,7 +256,7 @@ async function renderPage(){
   try{
     var page=await pdf.getPage(pageNum);if(token!==renderToken)return;
     var v1=page.getViewport({scale:1});var vs=viewportSize();
-    var availW=Math.max(60,vs.w-20),availH=Math.max(60,vs.h-20);
+    var availW=Math.max(60,vs.w-12),availH=Math.max(60,vs.h-12);
     if(fitMode==="width")zoom=availW/v1.width;else if(fitMode==="page")zoom=Math.min(availW/v1.width,availH/v1.height);
     zoom=clamp(zoom,MINZ,MAXZ);
     var dpr=Math.min(window.devicePixelRatio||1,2.5);
