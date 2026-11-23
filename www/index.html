@@ -77,8 +77,8 @@ h1{font-size:26px;margin:4px 0 4px} h2{font-size:20px;margin:0 0 14px}
 .pager .crumb{color:var(--muted);font-size:13px;flex:1;min-width:160px}
 .pager .zoom{margin-left:auto;display:flex;gap:4px}
 .pager .zoom button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.stage{padding:0;display:flex;justify-content:center;align-items:flex-start;overflow:auto;min-height:0;touch-action:pan-x pan-y;overscroll-behavior:contain}
-.stage img{background:var(--page);box-shadow:var(--shadow);max-width:none;height:auto;display:block;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;touch-action:pan-x pan-y}
+.stage{padding:0;display:block;overflow:auto;min-height:0;touch-action:pan-x pan-y;overscroll-behavior:contain}
+.stage img{background:var(--page);box-shadow:var(--shadow);max-width:none;height:auto;display:block;margin:0 auto;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;touch-action:pan-x pan-y}
 .stage.z100 img{max-width:none;width:1275px}
 .stage.z150 img{max-width:none;width:1900px}
 .note{font-size:12.5px;color:var(--muted);text-align:center;padding:0 16px 30px}
@@ -177,7 +177,7 @@ function page(n){
     <span class="crumb"><a href="#/s/${s.id}">${esc(s.ru)}</a></span>
   </div><div class="stage" id="stage"><img id="img" draggable="false" src="pages/p${String(p.p).padStart(3,'0')}.png" alt="${esc(pageLabel(p))}"></div>`;
   const stage=document.getElementById('stage'),img=document.getElementById('img');
-  let scale=1,base=1,pinch=null;
+  let scale=1,pinch=null;
   function apply(){img.style.width=Math.round(1275*scale)+'px';img.style.height=Math.round(1650*scale)+'px'}
   function fit(){scale=fitScale(stage);apply();stage.scrollTop=0;stage.scrollLeft=0}
   requestAnimationFrame(fit);img.onload=fit;
