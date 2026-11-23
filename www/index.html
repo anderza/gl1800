@@ -173,7 +173,7 @@ function page(n){
     <button id="pv" ${prev?'':'disabled'}>←</button>
     <span class="where">${esc(pageLabel(p))}</span>
     <button id="nx" ${next?'':'disabled'}>→</button>
-    <button id="fit" title="Показать страницу целиком">⛶</button>
+    <button id="minus" title="Уменьшить">−</button><button id="fit" title="Показать страницу целиком">⛶</button><button id="plus" title="Увеличить">+</button>
     <span class="crumb"><a href="#/s/${s.id}">${esc(s.ru)}</a></span>
   </div><div class="stage" id="stage"><img id="img" draggable="false" src="pages/p${String(p.p).padStart(3,'0')}.png" alt="${esc(pageLabel(p))}"></div>`;
   const stage=document.getElementById('stage'),img=document.getElementById('img');
@@ -184,6 +184,9 @@ function page(n){
   if(prev)document.getElementById('pv').onclick=()=>location.hash='#/p/'+prev.p;
   if(next)document.getElementById('nx').onclick=()=>location.hash='#/p/'+next.p;
   document.getElementById('fit').onclick=fit;
+  function setScale(next){const old=scale,cx=stage.clientWidth/2,cy=stage.clientHeight/2,x=stage.scrollLeft+cx,y=stage.scrollTop+cy;scale=Math.max(.1,Math.min(4,next));apply();stage.scrollLeft=Math.max(0,x*scale/old-cx);stage.scrollTop=Math.max(0,y*scale/old-cy)}
+  document.getElementById('plus').onclick=()=>setScale(scale*1.5);
+  document.getElementById('minus').onclick=()=>setScale(scale/1.5);
   function distance(t){return Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY)||1}
   stage.addEventListener('touchstart',e=>{if(e.touches.length===2){
     const r=stage.getBoundingClientRect(),cx=(e.touches[0].clientX+e.touches[1].clientX)/2-r.left,cy=(e.touches[0].clientY+e.touches[1].clientY)/2-r.top;
