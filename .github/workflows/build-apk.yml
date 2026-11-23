@@ -30,6 +30,10 @@ jobs:
           python-version: '3.11'
 
 
+      - name: Fetch Russian images for web preview
+        run: |
+          python -m pip install "gdown>=5,<6"
+          python scripts/fetch_ru_pages.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: www
@@ -63,28 +67,10 @@ jobs:
           python-version: '3.11'
 
 
-      # A viewer-only update must not be blocked by a pre-existing manual PDF.
-      # Check the PDF when it is actually changed; preserve existing assets otherwise.
-      - name: Check whether manual PDF changed
-        id: manual_changes
-        shell: bash
+      - name: Fetch 757 translated Russian page images from Google Drive
         run: |
-          git fetch --no-tags --depth=2 origin "${{ github.ref_name }}" || true
-          if git rev-parse HEAD^ >/dev/null 2>&1 && git diff --quiet HEAD^ HEAD -- www/manual.pdf; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Verify changed Russian manual before packaging
-        if: steps.manual_changes.outputs.changed == 'true'
-        run: |
-          python -m pip install "PyMuPDF==1.26.7"
-          python scripts/verify_ru_manual.py www/manual.pdf
-
-      - name: Note unchanged manual
-        if: steps.manual_changes.outputs.changed == 'false'
-        run: echo "UI-only build; existing manual PDF is unchanged. Its translation status is not re-certified."
+          python -m pip install "gdown>=5,<6"
+          python scripts/fetch_ru_pages.py
 
       - name: Add Android platform
         run: |
